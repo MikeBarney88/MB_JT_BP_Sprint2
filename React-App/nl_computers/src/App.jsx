@@ -1,8 +1,9 @@
 function App() {
-    return (
-        <>
-        </>
-    )
+  return (
+    <>
+      <h2>NL Computers</h2>
+    </>
+  );
 }
 
 export default App;
