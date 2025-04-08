@@ -3,11 +3,11 @@ import Prebuilt1 from "./Images/Prebuilt1.webp";
 import Prebuilt2 from "./Images/Prebuilt2.webp";
 import Prebuilt3 from "./Images/Prebuilt3.webp";
 import Prebuilt4 from "./Images/Prebuilt4.avif";
-import Prebuilt5 from "./Images/Prebuilt5.jfif";
+import Prebuilt5 from "./Images/Prebuilt5.avif";
 import Prebuilt6 from "./Images/Prebuilt6.webp";
-import Prebuilt7 from "./Images/Prebuilt7.jfif";
-import Prebuilt8 from "./Images/Prebuilt8.jfif";
-import Prebuilt9 from "./Images/Prebuilt9.jfif";
+import Prebuilt7 from "./Images/Prebuilt7.webp";
+import Prebuilt8 from "./Images/Prebuilt8.webp";
+import Prebuilt9 from "./Images/Prebuilt9.png";
 
 function App() {
   return (
