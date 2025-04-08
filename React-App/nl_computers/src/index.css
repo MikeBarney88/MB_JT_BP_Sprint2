@@ -43,6 +43,15 @@ main {
   margin: auto;
 }
 
+#pc-button {
+  background-color: black;
+  border-radius: 8px;
+  float: right;
+  color: rgb(12, 76, 216);
+  margin-bottom: 10px;
+  width: 20px;
+}
+
 .pc-card1 {
   grid-column: 1 / 2;
   grid-row: 2/3;
