@@ -1,7 +1,11 @@
+import Logo from "./Images/Logo.jpg";
+
 function App() {
   return (
     <>
-      <h2>NL Computers</h2>
+      <div className="container">
+        <img src={Logo} alt="Our Logo" />
+      </div>
     </>
   );
 }
