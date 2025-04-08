@@ -3,17 +3,15 @@ import Logo from "./Images/Logo.jpg";
 function App() {
   return (
     <>
-      <body>
-        <header>
-          <img src={Logo} alt="Our Logo" />
-        </header>
+      <header>
+        <img src={Logo} alt="Our Logo" />
+      </header>
 
-        <nav></nav>
+      <nav></nav>
 
-        <main></main>
+      <main></main>
 
-        <footer></footer>
-      </body>
+      <footer></footer>
     </>
   );
 }
