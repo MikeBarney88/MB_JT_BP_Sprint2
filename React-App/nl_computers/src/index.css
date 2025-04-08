@@ -1,12 +1,131 @@
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  min-width: 200px;
+  max-width: 860px;
   margin: auto;
-  background-color: rgb(49, 38, 38);
-  color: rgb(226, 185, 110);
+  justify-content: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(83, 128, 179);
+}
+header {
+  display: grid;
+  grid-template-columns: 3fr;
+  grid-template-rows: 50px auto;
+  background-color: #0a094d;
 }
 
-.container {
+.header-img {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  justify-content: left;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 3fr;
+  grid-template-rows: 40px auto;
+  gap: 20px;
+}
+
+.pc-header {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  text-align: center;
+  justify-content: center;
+  padding: 300px, 0, 200px, 0;
+}
+
+.card {
+  background-color: #0a094d;
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  box-shadow: 2px 2px hsl(0, 1%, 16%);
+  margin: auto;
+}
+
+.pc-card1 {
+  grid-column: 1 / 2;
+  grid-row: 2/3;
+  text-align: center;
+  justify-content: center;
+  width: 275px;
+  height: 390px;
+  padding: 30px;
+}
+
+.pc-card2 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  text-align: center;
+  justify-content: center;
+  width: 275px;
+  height: 390px;
+  padding: 30px;
+}
+.pc-card3 {
+  grid-column: 3/4;
+  grid-row: 2/3;
+  text-align: center;
+  justify-content: center;
+  width: 275px;
+  height: 390px;
+  padding: 30px;
+}
+
+.pc-card4 {
+  grid-column: 1 / 2;
+  grid-row: 3/4;
+  text-align: center;
+  justify-content: center;
+  width: 275px;
+  height: 390px;
+  padding: 30px;
+}
+
+.pc-card5 {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  text-align: center;
+  justify-content: center;
+  width: 275px;
+  height: 390px;
+  padding: 30px;
+}
+.pc-card6 {
+  grid-column: 3/4;
+  grid-row: 3/4;
+  text-align: center;
+  justify-content: center;
+  width: 275px;
+  height: 390px;
+  padding: 30px;
+}
+
+.pc-card7 {
+  grid-column: 1 / 2;
+  grid-row: 4/5;
+  text-align: center;
+  justify-content: center;
+  width: 275px;
+  height: 390px;
+  padding: 30px;
+}
+
+.pc-card8 {
+  grid-column: 2/3;
+  grid-row: 4/5;
+  text-align: center;
+  justify-content: center;
+  width: 275px;
+  height: 390px;
+  padding: 30px;
+}
+.pc-card9 {
+  grid-column: 3/4;
+  grid-row: 4/5;
+  text-align: center;
+  justify-content: center;
+  width: 275px;
+  height: 390px;
+  padding: 30px;
 }
