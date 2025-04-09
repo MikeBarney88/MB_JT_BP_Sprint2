@@ -31,7 +31,7 @@ function App() {
           path="/"
           element={
             <main>
-              <div className=" pc-header">
+              <div className="pc-header">
                 <h1>Ready to Ship Computers</h1>
               </div>
 
