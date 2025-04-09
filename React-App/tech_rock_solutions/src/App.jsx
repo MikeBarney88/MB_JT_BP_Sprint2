@@ -181,7 +181,7 @@ function App() {
         />
 
         <Route path="/cart" element={<ShoppingCart />} />
-        <Route path="/accessories" element={<Peripheral/>}/>
+        <Route path="/accessories" element={<Peripheral />} />
         {/* <Route path="/details" element={}/> */}
       </Routes>
 
