@@ -11,8 +11,6 @@ import ShuresSM7B from "/images/ShuresSM7B.jpg"
 
 
 
-
-
 function Peripheral() {
   return (
     <div>Peripheral</div>
