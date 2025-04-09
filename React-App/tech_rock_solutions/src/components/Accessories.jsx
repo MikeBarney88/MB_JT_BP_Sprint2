@@ -11,11 +11,11 @@ import ShureSM7B from "../images/ShureSM7B.jpg"
 
 
 
-function Peripheral() {
+function Accessories() {
   return (
     <>
-    <div className=" Peripherals-header">
-    <h1>The Best Computer Peripherals</h1>
+    <div className="accessories-header">
+    <h1>The Best Computer Accessories</h1>
     </div>
     <div></div>
     <div></div>

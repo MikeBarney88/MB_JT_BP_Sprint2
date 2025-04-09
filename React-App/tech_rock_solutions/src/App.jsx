@@ -11,9 +11,13 @@ import Prebuilt6 from "./images/Prebuilt6.webp";
 import Prebuilt7 from "./images/Prebuilt7.webp";
 import Prebuilt8 from "./images/Prebuilt8.webp";
 import Prebuilt9 from "./images/Prebuilt9.png";
+import Facebook from "./images/Facebook.jpg";
+import Instagram from "./images/Instagram.jpg";
+import Twitter from "./images/Twitter.jpg";
+import Youtube from "./images/Youtube.jpg";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ShoppingCart from "./components/ShoppingCart";
-import Peripheral from "./components/Peripheral";
+import Accessories from "./components/Accessories";
 import { Link } from "react-router-dom";
 
 function App() {
@@ -31,7 +35,7 @@ function App() {
           path="/"
           element={
             <main>
-              <div className="pc-header">
+              <div className=" pc-header">
                 <h1>Ready to Ship Computers</h1>
               </div>
 
@@ -177,7 +181,7 @@ function App() {
         />
 
         <Route path="/cart" element={<ShoppingCart />} />
-        <Route path="/accessories" element={<Peripheral />} />
+        <Route path="/accessories" element={<Accessories />} />
         {/* <Route path="/details" element={}/> */}
       </Routes>
 
