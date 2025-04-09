@@ -27,12 +27,12 @@ function App() {
 
         <br />
         <br />
-        <nav>
-
-        </nav>
+        <nav></nav>
       </header>
-        <Routes>
-          <Route path="/" element={
+      <Routes>
+        <Route
+          path="/"
+          element={
             <main>
               <div className=" pc-header">
                 <h1>Ready to Ship Computers</h1>
@@ -63,7 +63,9 @@ function App() {
                 <img src={Prebuilt3} width={180} height={180} alt="Pc3" />
                 <br />
                 <h3 className="card-h3">Twillingate</h3>
-                <p>Intel Core i7-13700F | RTX 4070 Super | 32GB RAM | 1TB SSD</p>
+                <p>
+                  Intel Core i7-13700F | RTX 4070 Super | 32GB RAM | 1TB SSD
+                </p>
                 <h3 className="card-h3">$2599.99</h3>
                 <button id="pc-button">Add to Cart</button>
               </div>
@@ -82,7 +84,9 @@ function App() {
                 <img src={Prebuilt5} width={180} height={180} alt="Pc5" />
                 <br />
                 <h3 className="card-h3">Burin</h3>
-                <p>- Ryzen 7 9800X3D | RTX 4080 Super | 64GB RAM | 1TB + 2TB SSD</p>
+                <p>
+                  - Ryzen 7 9800X3D | RTX 4080 Super | 64GB RAM | 1TB + 2TB SSD
+                </p>
                 <h3 className="card-h3">$2999.99</h3>
                 <button id="pc-button">Add to Cart</button>
               </div>
@@ -102,7 +106,8 @@ function App() {
                 <br />
                 <h3 className="card-h3">Corner Brook</h3>
                 <p>
-                  Intel Core i9-14900KF | RTX 4080 Super | 64GB RAM | 2TB + 2TB SSD
+                  Intel Core i9-14900KF | RTX 4080 Super | 64GB RAM | 2TB + 2TB
+                  SSD
                 </p>
 
                 <h3 className="card-h3">$3399.99</h3>
@@ -113,7 +118,9 @@ function App() {
                 <img src={Prebuilt8} width={180} height={180} alt="Pc8" />
                 <br />
                 <h3 className="card-h3">St. John's</h3>
-                <p>Ryzen 7 7800X3D | RTX 4080 Super | 32GB RAM | 1TB + 2TB SSD</p>
+                <p>
+                  Ryzen 7 7800X3D | RTX 4080 Super | 32GB RAM | 1TB + 2TB SSD
+                </p>
 
                 <h3 className="card-h3">$3799.99</h3>
                 <button id="pc-button">Add to Cart</button>
@@ -123,24 +130,63 @@ function App() {
                 <img src={Prebuilt9} width={180} height={180} alt="Pc9" />
                 <br />
                 <h3 className="card-h3">Cape Spear</h3>
-                <p>Ryzen 9 7800X3D | RTX 5090 Ti Super | 64GB RAM | 2TB + 2TB M.2</p>
+                <p>
+                  Ryzen 9 7800X3D | RTX 5090 Ti Super | 64GB RAM | 2TB + 2TB M.2
+                </p>
 
                 <h3 className="card-h3">$5999.99</h3>
                 <button id="pc-button">Add to Cart</button>
               </div>
 
               <div className="about-header">
-                <h2>About Us</h2>
+                <h1>About Us</h1>
+              </div>
+              <div className="about-section">
+                <p>
+                  At Rock Tech Solutions, we've been proudly serving
+                  Newfoundland's technology needs since 2007. Nestled in the
+                  heart of St. John's, our locally-owned and operated computer
+                  store combines East Coast hospitality with cutting-edge tech
+                  expertise.
+                </p>
+                <br />
+                <p>
+                  We understand the unique challenges of island living and have
+                  built our business around providing reliable technology
+                  solutions that keep Newfoundlanders connected, productive, and
+                  ahead of the curve. Whether you're a fisher needing a rugged
+                  laptop that can withstand harsh conditions, a remote worker
+                  requiring a stable home office setup, or a student looking for
+                  affordable computing options, our experienced team delivers
+                  personalized service with a smile.
+                </p>
+                <br />
+                <p>
+                  Our store features a carefully curated selection of computers,
+                  parts, accessories, and software to meet every need and
+                  budget. Beyond retail, we offer expert repairs, custom builds,
+                  business IT support, and technology education for all ages.
+                </p>
+                <br />
+                <p>
+                  At Rock Tech Solutions, we're more than just a computer store,
+                  we're your technology partners through fog, wind, and snow.
+                  Drop by for a chat, a free diagnostic, or just to talk tech.
+                  We'll put the kettle on.
+                </p>
               </div>
             </main>
-          }/>
+          }
+        />
 
-          <Route path="/cart" element={<ShoppingCart />} />
-          {/* <Route path="/accessories" element={}/>
+        <Route path="/cart" element={<ShoppingCart />} />
+        {/* <Route path="/accessories" element={}/>
         <Route path="/details" element={}/> */}
-        </Routes>
+      </Routes>
 
-        <footer></footer>
+      <footer>
+        <div className="footer-left">© 2025 Rock Tech Solutions </div>
+      </footer>
     </Router>
   );
 }

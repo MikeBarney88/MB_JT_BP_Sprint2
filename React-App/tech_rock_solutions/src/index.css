@@ -181,7 +181,6 @@ footer {
   grid-row: auto;
   font-size: large;
   padding: 10px;
-  /* justify-content: center; */
   background-color: black;
 }
 
@@ -197,17 +196,4 @@ footer {
   grid-row: 1/2;
   background-color: black;
   text-align: right;
-}
-
-.footer-right a:link,
-a:visited {
-  background-color: black;
-  padding: 10px;
-  color: black;
-}
-
-.footer-right a:hover {
-  background-color: black;
-  color: black;
-  padding: 10px;
 }
