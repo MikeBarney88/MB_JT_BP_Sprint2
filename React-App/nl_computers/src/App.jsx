@@ -16,7 +16,7 @@ import Instagram from "./Images/Instagram.jpg";
 import Twitter from "./Images/Twitter.jpg";
 import Youtube from "./Images/Youtube.jpg";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import ShoppingCart from "./Components/ShoppingCart";
+import ShoppingCart from "./components/ShoppingCart";
 import { Link } from "react-router-dom";
 
 function App() {
