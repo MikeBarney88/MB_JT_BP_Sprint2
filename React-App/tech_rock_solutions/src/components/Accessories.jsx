@@ -29,4 +29,4 @@ function Accessories() {
     </>
   )
 }
-export default Peripheral
+export default Accessories;
