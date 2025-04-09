@@ -1,5 +1,5 @@
 import CorsairHS70 from "../images/CorsairHS70.jpg"
-import CosairK70 from "../images/CosairK70.jpg"
+import CorsairK70 from "../images/CorsairK70.jpg"
 import CorScim from "../images/CorScim.jpg"
 import LogitechG502 from "../images/LogitechG502.jpg"
 import LogitechMK370 from "../images/LogitechMK370.jpg"
