@@ -1,3 +1,6 @@
+desc: Sprint2;
+Author: Joey, Michael, Brandon;
+
 import Logo from "./Images/Logo.jpg";
 import Prebuilt1 from "./Images/Prebuilt1.webp";
 import Prebuilt2 from "./Images/Prebuilt2.webp";
@@ -9,17 +12,26 @@ import Prebuilt7 from "./Images/Prebuilt7.webp";
 import Prebuilt8 from "./Images/Prebuilt8.webp";
 import Prebuilt9 from "./Images/Prebuilt9.png";
 
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ShoppingCart from "./Components/ShoppingCart";
+import { Link } from "react-router-dom";
+
 function App() {
   return (
-    <>
+    <Router>
       <header>
         <p className="header-p">Fresh PreBuilt Computers from Da Rock</p>
-        <img className="header-img" src={Logo} width={50} height={50} alt="" />
+        <img className="header-img" src={Logo} width={75} height={75} alt="" />
         <br />
         <br />
+        <nav>
+          <Routes>
+            <Route path="/cart" element={<ShoppingCart />} />
+            {/* <Route path="/accessories" element={}/>
+          <Route path="/details" element={}/> */}
+          </Routes>
+        </nav>
       </header>
-
-      <nav></nav>
 
       <main>
         <div className=" pc-header">
@@ -116,10 +128,14 @@ function App() {
           <h3 className="card-h3">$5999.99</h3>
           <button id="pc-button">Add to Cart</button>
         </div>
+
+        <div className="about-header">
+          <h2>About Us</h2>
+        </div>
       </main>
 
       <footer></footer>
-    </>
+    </Router>
   );
 }
 
