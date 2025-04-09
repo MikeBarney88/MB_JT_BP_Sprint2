@@ -1,17 +1,20 @@
-//desc: Sprint2;
-//Author: Joey, Michael, Brandon;
+// Desc: Sprint2;
+// Author: Joey, Michael, Brandon;
+// Date: April, 7 - 16 2025
 
-import Logo from "./Images/Logo.jpg";
-import Prebuilt1 from "./Images/Prebuilt1.webp";
-import Prebuilt2 from "./Images/Prebuilt2.webp";
-import Prebuilt3 from "./Images/Prebuilt3.webp";
-import Prebuilt4 from "./Images/Prebuilt4.avif";
-import Prebuilt5 from "./Images/Prebuilt5.avif";
-import Prebuilt6 from "./Images/Prebuilt6.webp";
-import Prebuilt7 from "./Images/Prebuilt7.webp";
-import Prebuilt8 from "./Images/Prebuilt8.webp";
-import Prebuilt9 from "./Images/Prebuilt9.png";
-
+import Prebuilt1 from "./images/Prebuilt1.webp";
+import Prebuilt2 from "./images/Prebuilt2.webp";
+import Prebuilt3 from "./images/Prebuilt3.webp";
+import Prebuilt4 from "./images/Prebuilt4.avif";
+import Prebuilt5 from "./images/Prebuilt5.avif";
+import Prebuilt6 from "./images/Prebuilt6.webp";
+import Prebuilt7 from "./images/Prebuilt7.webp";
+import Prebuilt8 from "./images/Prebuilt8.webp";
+import Prebuilt9 from "./images/Prebuilt9.png";
+import Facebook from "./images/Facebook.jpg";
+import Instagram from "./images/Instagram.jpg";
+import Twitter from "./images/Twitter.jpg";
+import Youtube from "./images/Youtube.jpg";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ShoppingCart from "./components/ShoppingCart";
 import { Link } from "react-router-dom";
@@ -21,7 +24,7 @@ function App() {
     <Router>
       <header>
         <p className="header-p">Fresh PreBuilt Computers from Da Rock</p>
-        <img className="header-img" src={Logo} width={75} height={75} alt="" />
+
         <br />
         <br />
         <nav>
