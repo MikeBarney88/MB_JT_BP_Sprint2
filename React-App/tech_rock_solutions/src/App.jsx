@@ -17,6 +17,7 @@ import Twitter from "./images/Twitter.jpg";
 import Youtube from "./images/Youtube.jpg";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ShoppingCart from "./components/ShoppingCart";
+import Peripheral from "./components/Peripheral";
 import { Link } from "react-router-dom";
 
 function App() {
@@ -180,8 +181,8 @@ function App() {
         />
 
         <Route path="/cart" element={<ShoppingCart />} />
-        {/* <Route path="/accessories" element={}/>
-        <Route path="/details" element={}/> */}
+        <Route path="/accessories" element={<Peripheral/>}/>
+        {/* <Route path="/details" element={}/> */}
       </Routes>
 
       <footer>
