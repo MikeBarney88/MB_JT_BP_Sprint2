@@ -6,7 +6,7 @@ import LogitechMK370 from "../images/LogitechMK370.jpg"
 import RazerBWidow from "../images/RazerBWidow.jpg"
 import RazerKitty from "../images/RazerKitty.jpg"
 import RazerNaga from "../images/RazerNaga.jpg"
-import ShuresSM7B from "../images/ShuresSM7B.jpg"
+import ShureSM7B from "../images/ShureSM7B.jpg"
 
 
 
