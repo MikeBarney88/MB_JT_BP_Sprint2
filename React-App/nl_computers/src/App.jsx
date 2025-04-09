@@ -1,7 +1,7 @@
-desc: Sprint2;
-Author: Joey, Michael, Brandon;
+// Desc: Sprint2;
+// Author: Joey, Michael, Brandon;
+// Date: April, 7 - 16 2025
 
-import Logo from "./Images/Logo.jpg";
 import Prebuilt1 from "./Images/Prebuilt1.webp";
 import Prebuilt2 from "./Images/Prebuilt2.webp";
 import Prebuilt3 from "./Images/Prebuilt3.webp";
@@ -11,7 +11,10 @@ import Prebuilt6 from "./Images/Prebuilt6.webp";
 import Prebuilt7 from "./Images/Prebuilt7.webp";
 import Prebuilt8 from "./Images/Prebuilt8.webp";
 import Prebuilt9 from "./Images/Prebuilt9.png";
-
+import Facebook from "./Images/Facebook.jpg";
+import Instagram from "./Images/Instagram.jpg";
+import Twitter from "./Images/Twitter.jpg";
+import Youtube from "./Images/Youtube.jpg";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ShoppingCart from "./Components/ShoppingCart";
 import { Link } from "react-router-dom";
@@ -21,7 +24,7 @@ function App() {
     <Router>
       <header>
         <p className="header-p">Fresh PreBuilt Computers from Da Rock</p>
-        <img className="header-img" src={Logo} width={75} height={75} alt="" />
+
         <br />
         <br />
         <nav>
@@ -130,11 +133,57 @@ function App() {
         </div>
 
         <div className="about-header">
-          <h2>About Us</h2>
+          <h1>About Us</h1>
+        </div>
+
+        <div className="about-section">
+          <p>
+            At Rock Tech Solutions, we've been proudly serving Newfoundland's
+            technology needs since 2007. Nestled in the heart of St. John's, our
+            locally-owned and operated computer store combines East Coast
+            hospitality with cutting-edge tech expertise.
+          </p>
+          <br />
+          <p>
+            We understand the unique challenges of island living and have built
+            our business around providing reliable technology solutions that
+            keep Newfoundlanders connected, productive, and ahead of the curve.
+            Whether you're a fisher needing a rugged laptop that can withstand
+            harsh conditions, a remote worker requiring a stable home office
+            setup, or a student looking for affordable computing options, our
+            experienced team delivers personalized service with a smile.
+          </p>
+          <br />
+          <p>
+            Our store features a carefully curated selection of computers,
+            parts, accessories, and software to meet every need and budget.
+            Beyond retail, we offer expert repairs, custom builds, business IT
+            support, and technology education for all ages. At Rock Tech
+            Solutions, we're more than just a computer store.. we're your
+            technology partners through fog, wind, and snow. Drop by for a chat,
+            a free diagnostic, or just to talk tech. We'll put the kettle on.
+          </p>
         </div>
       </main>
 
-      <footer></footer>
+      <footer>
+        <div className="footer-left">© 2025 NL Computers</div>
+
+        <div className="footer-right">
+          <a href="http://facebook.com">
+            <img src={Facebook} width={15} height={5} alt="fontawesome" />
+          </a>
+          <a href="http://instagram.com">
+            <img src={Instagram} width={15} height={5} alt="fontawesome" />
+          </a>
+          <a href="http://twitter.com">
+            <img src={Twitter} width={15} height={5} alt="fontawesome" />
+          </a>
+          <a href="http://youtube.com">
+            <img src={Youtube} width={15} height={5} alt="fontawesome" />
+          </a>
+        </div>
+      </footer>
     </Router>
   );
 }
