@@ -1,13 +1,28 @@
 import {useState, useEffect, createContext} from "react";
 
 
-
 export const ShoppingCartContext = createContext(null);
 
+
+//Removes items from cart through via an id filter.
+export function removeFromCart(id, context) {
+
+    context.setCart(context.cart.filter((item)=>{item.id !== id}));
+}
+
+
+//Change quantity of the selected item in the cart.
+export function changeQuantityCart(id, value) {
+
+}
+
+
 export function ShoppingCartProvider(props) {
+
     //Create state variables.
     const [loading, setLoading] = useState(true);
     const [cart, setCart] = useState();
+
 
     //Get cart data from the server.
     useEffect(()=>{
@@ -22,7 +37,6 @@ export function ShoppingCartProvider(props) {
         getServerData();
     }, [])
 
-    
 
     return (
         <ShoppingCartContext.Provider value={{cart, setCart, loading, setLoading}}>

@@ -1,5 +1,5 @@
 import {useContext} from "react";
-import {ShoppingCartContext} from "../context/conShoppingCart";
+import {ShoppingCartContext, removeFromCart} from "../context/conShoppingCart";
 
 function ShoppingCart() {
     const cart = useContext(ShoppingCartContext);
@@ -10,7 +10,7 @@ function ShoppingCart() {
 
             <div className="cartBox">
                 {cart.loading ? (<li>Loading...</li>) : cart.cart.map((item, index)=>(
-                    <li key={index}>{item.item1} <button onClick={(e)=>{removeFromCart(e.target.id)}}>Remove</button></li>
+                    <li key={index}>{item.item1} <button onClick={(e)=>{removeFromCart(e.target.id, cart)}} style={{cursor: "pointer"}}>Remove</button></li>
                 ))}
             </div>
         </div>
