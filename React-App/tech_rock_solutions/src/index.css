@@ -28,8 +28,8 @@ header {
 
 nav {
   padding-bottom: 30px;
-  font-weight: 500;
-  font-size: large;
+  font-weight: 700;
+  font-size: larger;
 }
 
 .header-img {
@@ -197,7 +197,7 @@ footer {
   font-size: large;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  padding: 10px;
+  padding: 25px;
   background-color: #161b4a;
 }
 
@@ -215,6 +215,29 @@ footer {
 
 /* Shopping Cart CSS */
 
-/* .shoppingCartInfo {
-  
-} */
+/* Product Details CSS */
+
+.product-card {
+  grid-column: 1 / 3;
+  grid-row: 3/4;
+  text-align: center;
+  justify-content: center;
+  width: 700px;
+  height: 800px;
+  padding: 80px;
+}
+
+.h4-left {
+  padding-left: 15px;
+  text-align: left;
+}
+#spec-button {
+  background-color: black;
+  border-radius: 8px;
+  float: right;
+  color: rgb(12, 76, 216);
+  padding: 10px;
+  margin-right: 5px;
+}
+
+/* Accessories CSS */
