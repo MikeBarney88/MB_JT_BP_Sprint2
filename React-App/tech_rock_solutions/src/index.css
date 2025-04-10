@@ -1,5 +1,5 @@
-/* Desc: Sprint2;
-Author: Joey, Michael, Brandon;
+/* Desc: Sprint 2
+Author: Joey, Michael, Brandon
 Date: April, 7 - 16 2025 */
 
 * {
@@ -20,8 +20,13 @@ header {
   display: grid;
   grid-template-columns: 2fr;
   grid-template-rows: 70px auto;
-  background-color: #0a094d;
-  padding: 20px;
+  background-color: #161b4a;
+  padding: 20px, 0, 10px, 0;
+}
+
+nav {
+  padding-bottom: 30px;
+  font-size: large;
 }
 
 .header-img {

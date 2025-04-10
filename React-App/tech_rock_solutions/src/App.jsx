@@ -2,6 +2,7 @@
 // Author: Joey, Michael, Brandon;
 // Date: April, 7 - 16 2025
 
+import Header from "./images/Header.jpg";
 import Prebuilt1 from "./images/Prebuilt1.webp";
 import Prebuilt2 from "./images/Prebuilt2.webp";
 import Prebuilt3 from "./images/Prebuilt3.webp";
@@ -20,14 +21,15 @@ function App() {
   return (
     <Router>
       <header>
-        <p className="header-p">Fresh PreBuilt Computers from Da Rock</p>
+        <img src={Header} alt="Our header" />
 
         <br />
         <br />
         <nav>
           <Link to="/">Home</Link>&nbsp;&nbsp;
           <Link to="/Accessories">Accessories</Link> &nbsp;
-          <Link to="/Cart">Shopping Cart</Link>
+          <Link to="/Cart">Shopping Cart</Link> &nbsp;
+          <Link tp="/ProductDetails">Product Details</Link>
         </nav>
       </header>
       <Routes>
