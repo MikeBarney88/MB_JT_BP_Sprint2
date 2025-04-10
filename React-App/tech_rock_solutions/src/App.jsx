@@ -19,6 +19,7 @@ import YouTube from "./images/Youtube.svg";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ShoppingCart from "./components/ShoppingCart";
 import Accessories from "./components/Accessories";
+import ProductDetails from "./components/ProductDetails";
 import { Link } from "react-router-dom";
 
 function App() {
@@ -33,7 +34,7 @@ function App() {
           <Link to="/">Home</Link>&nbsp;&nbsp;
           <Link to="/Accessories">Accessories</Link> &nbsp;
           <Link to="/Cart">Shopping Cart</Link> &nbsp;
-          <Link tp="/ProductDetails">Product Details</Link>
+          <Link to="/ProductDetails">Product Details</Link>
         </nav>
       </header>
       <Routes>
@@ -229,7 +230,7 @@ function App() {
 
         <Route path="/cart" element={<ShoppingCart />} />
         <Route path="/accessories" element={<Accessories />} />
-        {/* <Route path="/details" element={}/> */}
+        <Route path="/ProductDetails" element={<ProductDetails/>}/>
       </Routes>
 
       <footer>
