@@ -2,6 +2,7 @@
 // Author: Joey, Michael, Brandon;
 // Date: April, 7 - 16 2025
 
+import Header from "./images/Header.jpg";
 import Prebuilt1 from "./images/Prebuilt1.webp";
 import Prebuilt2 from "./images/Prebuilt2.webp";
 import Prebuilt3 from "./images/Prebuilt3.webp";
@@ -11,6 +12,10 @@ import Prebuilt6 from "./images/Prebuilt6.webp";
 import Prebuilt7 from "./images/Prebuilt7.webp";
 import Prebuilt8 from "./images/Prebuilt8.webp";
 import Prebuilt9 from "./images/Prebuilt9.png";
+import Facebook from "./images/Facebook.svg";
+import Instagram from "./images/Instagram.svg";
+import Twitter from "./images/Twitter.svg";
+import YouTube from "./images/Youtube.svg";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ShoppingCart from "./components/ShoppingCart";
 import Accessories from "./components/Accessories";
@@ -20,14 +25,15 @@ function App() {
   return (
     <Router>
       <header>
-        <p className="header-p">Fresh PreBuilt Computers from Da Rock</p>
+        <img src={Header} alt="Our header" />
 
         <br />
         <br />
         <nav>
           <Link to="/">Home</Link>&nbsp;&nbsp;
           <Link to="/Accessories">Accessories</Link> &nbsp;
-          <Link to="/Cart">Shopping Cart</Link>
+          <Link to="/Cart">Shopping Cart</Link> &nbsp;
+          <Link tp="/ProductDetails">Product Details</Link>
         </nav>
       </header>
       <Routes>
@@ -175,6 +181,25 @@ function App() {
                   Drop by for a chat, a free diagnostic, or just to talk tech.
                   We'll put the kettle on.
                 </p>
+              </div>
+
+              <div className="social-header">
+                <h1>Our Social Media</h1>
+              </div>
+
+              <div className="our-socials">
+                <img src={Facebook} width={50} height={50} alt="Font Awesome" />
+
+                <img
+                  src={Instagram}
+                  width={50}
+                  height={50}
+                  alt="Font Awesome"
+                />
+
+                <img src={Twitter} width={50} height={50} alt="Font Awesome" />
+
+                <img src={YouTube} width={50} height={50} alt="Font Awesome" />
               </div>
             </main>
           }
