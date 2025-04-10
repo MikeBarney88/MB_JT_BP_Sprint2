@@ -5,15 +5,17 @@ Date: April, 7 - 16 2025 */
 * {
   box-sizing: border-box;
   min-width: 200px;
-  max-width: 900px;
+  max-width: 1060px;
   margin: auto;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: rgb(83, 128, 179);
+  color: rgb(0, 0, 0);
 }
 
 body {
   margin: auto;
   background-color: rgb(0, 0, 0);
+  border-radius: 10px;
+  margin: 30px;
 }
 
 header {
@@ -26,6 +28,7 @@ header {
 
 nav {
   padding-bottom: 30px;
+  font-weight: 500;
   font-size: large;
 }
 
@@ -34,18 +37,13 @@ nav {
   grid-row: 1/2;
 }
 
-.header-p {
-  grid-column: 2/2;
-  grid-row: 1/2;
-}
-
 main {
   display: grid;
   grid-template-columns: 3fr;
   grid-template-rows: 40px auto;
-  background-color: rgb(68, 75, 68);
-  gap: 20px;
-  padding: 20px;
+  background-color: rgb(90, 95, 90);
+  gap: 40px;
+  padding: 80px;
   justify-content: center;
 }
 
@@ -187,7 +185,8 @@ main {
 }
 .our-socials {
   grid-column: 1/4;
-  grid-row: 10/11;
+  grid-row: 11/12;
+  padding: 40px, 0, 40px, 0;
 }
 
 footer {
@@ -196,15 +195,15 @@ footer {
   grid-column: 1/-1;
   grid-row: auto;
   font-size: large;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   padding: 10px;
-  background-color: black;
+  background-color: #161b4a;
 }
 
 .footer-left {
   grid-column: 1/3;
   text-align: left;
-  background-color: black;
-  padding-left: 20px;
 }
 
 .footer-right {
@@ -213,3 +212,9 @@ footer {
   background-color: black;
   text-align: right;
 }
+
+/* Shopping Cart CSS */
+
+/* .shoppingCartInfo {
+  
+} */

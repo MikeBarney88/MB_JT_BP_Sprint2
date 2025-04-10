@@ -188,18 +188,40 @@ function App() {
               </div>
 
               <div className="our-socials">
-                <img src={Facebook} width={50} height={50} alt="Font Awesome" />
+                <a href="http://Facebook.com">
+                  <img
+                    src={Facebook}
+                    width={50}
+                    height={50}
+                    alt="Font Awesome"
+                  />
+                </a>
 
-                <img
-                  src={Instagram}
-                  width={50}
-                  height={50}
-                  alt="Font Awesome"
-                />
+                <a href="http://Instagram.com">
+                  <img
+                    src={Instagram}
+                    width={50}
+                    height={50}
+                    alt="Font Awesome"
+                  />
+                </a>
 
-                <img src={Twitter} width={50} height={50} alt="Font Awesome" />
-
-                <img src={YouTube} width={50} height={50} alt="Font Awesome" />
+                <a href="http://Twitter.com">
+                  <img
+                    src={Twitter}
+                    width={50}
+                    height={50}
+                    alt="Font Awesome"
+                  />
+                </a>
+                <a href="http://Youtube.com">
+                  <img
+                    src={YouTube}
+                    width={50}
+                    height={50}
+                    alt="Font Awesome"
+                  />
+                </a>
               </div>
             </main>
           }
