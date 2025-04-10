@@ -12,6 +12,10 @@ import Prebuilt6 from "./images/Prebuilt6.webp";
 import Prebuilt7 from "./images/Prebuilt7.webp";
 import Prebuilt8 from "./images/Prebuilt8.webp";
 import Prebuilt9 from "./images/Prebuilt9.png";
+import Facebook from "./images/Facebook.svg";
+import Instagram from "./images/Instagram.svg";
+import Twitter from "./images/Twitter.svg";
+import YouTube from "./images/Youtube.svg";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ShoppingCart from "./components/ShoppingCart";
 import Accessories from "./components/Accessories";
@@ -177,6 +181,25 @@ function App() {
                   Drop by for a chat, a free diagnostic, or just to talk tech.
                   We'll put the kettle on.
                 </p>
+              </div>
+
+              <div className="social-header">
+                <h1>Our Social Media</h1>
+              </div>
+
+              <div className="our-socials">
+                <img src={Facebook} width={50} height={50} alt="Font Awesome" />
+
+                <img
+                  src={Instagram}
+                  width={50}
+                  height={50}
+                  alt="Font Awesome"
+                />
+
+                <img src={Twitter} width={50} height={50} alt="Font Awesome" />
+
+                <img src={YouTube} width={50} height={50} alt="Font Awesome" />
               </div>
             </main>
           }

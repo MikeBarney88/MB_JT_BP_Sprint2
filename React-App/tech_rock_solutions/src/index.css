@@ -179,6 +179,17 @@ main {
   padding: 60px;
 }
 
+.social-header {
+  grid-column: 1/4;
+  grid-row: 9/10;
+  text-align: center;
+  padding: 300px, 0, 200px, 0;
+}
+.our-socials {
+  grid-column: 1/4;
+  grid-row: 10/11;
+}
+
 footer {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
