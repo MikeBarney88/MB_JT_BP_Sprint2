@@ -24,7 +24,11 @@ function App() {
 
         <br />
         <br />
-        <nav></nav>
+        <nav>
+          <Link to="/">Home</Link>&nbsp;&nbsp;
+          <Link to="/Accessories">Accessories</Link> &nbsp;
+          <Link to="/Cart">Shopping Cart</Link>
+        </nav>
       </header>
       <Routes>
         <Route
