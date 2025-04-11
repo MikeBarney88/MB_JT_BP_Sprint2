@@ -58,7 +58,7 @@ main {
   display: grid;
   grid-template-columns: 3fr;
   grid-template-rows: 3.22vh auto;
-  background-color: rgb(194, 205, 214);
+  background-color: #c2cdd6;
   gap: 3.22vh 3.22vw;
   padding: 6.45vh 6.45vw;
   justify-content: center;

@@ -6,7 +6,7 @@ import Header from "./images/Header.jpg";
 import Prebuilt1 from "./images/Prebuilt1.webp";
 import Prebuilt2 from "./images/Prebuilt2.webp";
 import Prebuilt3 from "./images/Prebuilt3.webp";
-import Prebuilt4 from "./images/Prebuilt4.avif";
+import Prebuilt4 from "./images/Prebuilt4.png";
 import Prebuilt5 from "./images/Prebuilt5.avif";
 import Prebuilt6 from "./images/Prebuilt6.webp";
 import Prebuilt7 from "./images/Prebuilt7.webp";
