@@ -10,7 +10,7 @@ function ShoppingCart() {
 
   return (
     <main>
-      <div className="shoppingCartInfo">
+      <div className="card shoppingCartInfo">
         <h1>Your Shopping Cart:</h1>
 
         <div className="cartBox">

@@ -14,24 +14,39 @@ Date: April, 7 - 16 2025 */
 body {
   margin: auto;
   background-color: rgb(0, 0, 0);
-  border-radius: 10px;
-  margin: 30px;
+  border-radius: 0.78vh 0.78vw;
+  margin: 2.34vh 2.34vw;
+  font-size: 1.2vh;
 }
 
 header {
   display: grid;
   grid-template-columns: 2fr;
   grid-template-rows: 5.64vh auto;
-  border-top: 1px solid black;
+  border-top: 0.07vw solid black;
   background-color: #5862c5;
-  padding: 20px, 0, 10px, 0;
-  border-bottom: 4px solid black;
+  border-bottom: 0.32vh solid black;
 }
 
 nav {
   padding-bottom: 2.42vh;
   font-weight: 700;
-  font-size: larger;
+  font-size: 1.5vh;
+}
+
+nav a:link {
+  border: 0.2vh black solid;
+  padding: 0.7vh;
+  border-radius: 1.2vh;
+  text-decoration: none;
+  margin: 0.5vh;
+  transition: background-color 0.6s;
+}
+
+nav a:hover {
+  background-color: rgb(194, 205, 214);
+  transition: background-color 0.6s;
+  cursor: pointer;
 }
 
 .header-img {
@@ -43,7 +58,7 @@ main {
   display: grid;
   grid-template-columns: 3fr;
   grid-template-rows: 3.22vh auto;
-  background-color: rgb(187, 196, 187);
+  background-color: #c2cdd6;
   gap: 3.22vh 3.22vw;
   padding: 6.45vh 6.45vw;
   justify-content: center;
@@ -56,25 +71,25 @@ main {
 }
 
 .card {
-  background-color: #59596b;
-  border: 3px solid rgb(0, 0, 0);
-  border-radius: 10px;
-  box-shadow: 2px 2px hsl(0, 1%, 16%);
+  background-color: #5862c5;
+  border: 0.24vh solid rgb(0, 0, 0);
+  border-radius: 0.8vh;
+  box-shadow: 0.15vh 0.15vw hsl(0, 1%, 16%);
   margin: auto;
 }
 
 .card-h3 {
-  padding: 5px;
+  padding: 0.4vh 0.4vw;
   color: black;
 }
 
 #pc-button {
   background-color: black;
-  border-radius: 8px;
+  border-radius: 0.64vh 0.64vw;
   float: right;
   color: rgb(12, 76, 216);
-  margin-bottom: 10px;
-  width: 20px;
+  height: 2vh;
+  font-size: 1.1vh;
 }
 
 .pc-card1 {
@@ -169,25 +184,26 @@ main {
   grid-column: 1/4;
   grid-row: 7/8;
   text-align: center;
-  padding: 300px, 0, 200px, 0;
 }
 
 .about-section {
   grid-column: 1/4;
   grid-row: 8/9;
-  padding: 60px;
+  padding: 4.84vh;
+  border: 0.2vh solid black;
+  border-radius: 1.2vh;
+  width: 100%;
 }
 
 .social-header {
   grid-column: 1/4;
   grid-row: 9/10;
   text-align: center;
-  padding: 300px, 0, 200px, 0;
 }
+
 .our-socials {
   grid-column: 1/4;
   grid-row: 11/12;
-  padding: 40px, 0, 40px, 0;
 }
 
 footer {
@@ -196,9 +212,10 @@ footer {
   grid-column: 1/-1;
   grid-row: auto;
   font-size: large;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  padding: 25px;
+  border-top: 0.31vw solid black;
+  border-bottom-left-radius: 0.78vh;
+  border-bottom-right-radius: 0.78vh;
+  padding: 1.95vh 1.95vw;
   background-color: #5862c5;
 }
 
@@ -216,6 +233,16 @@ footer {
 
 /* Shopping Cart CSS */
 
+.shoppingCartInfo {
+  grid-column: 1 / 3;
+  grid-row: 3/4;
+  text-align: center;
+  justify-content: center;
+  width: 50.72vw;
+  height: 64.56vh;
+  padding: 6.45vh 6.45vw;
+}
+
 /* Product Details CSS */
 
 .product-card {
@@ -223,36 +250,36 @@ footer {
   grid-row: 3/4;
   text-align: center;
   justify-content: center;
-  width: 700px;
-  height: 800px;
-  padding: 80px;
+  width: 50.72vw;
+  height: 64.56vh;
+  padding: 6.45vh 6.45vw;
 }
 
 .h4-left {
-  padding-left: 15px;
+  padding-left: 1.17vw;
   text-align: left;
 }
 #spec-button {
   background-color: black;
-  border-radius: 8px;
+  border-radius: 0.62vh;
   float: right;
   color: rgb(12, 76, 216);
-  padding: 10px;
-  margin-right: 5px;
+  padding: 0.78vh 0.78vw;
+  margin-right: 0.39vw;
 }
 
 .specs-table {
   width: 100%;
   border-collapse: collapse;
-  margin: 30px 0;
+  margin: 2.34vw 0;
 }
 
 .specs-table tr {
-  border: 1px solid #0a0346;
+  border: 0.07vh solid #0a0346;
 }
 
 .specs-table td {
-  padding: 15px 0px;
+  padding: 1.17vw 0px;
 }
 
 .spec-name {
