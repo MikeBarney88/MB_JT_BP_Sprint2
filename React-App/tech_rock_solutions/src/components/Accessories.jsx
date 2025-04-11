@@ -16,7 +16,7 @@ function Accessories() {
           <h1>The Best and Baddest Computer Accessories</h1>
         </div>
         <div className="card pc-card1">
-          <img src={CorsairHS70} width={180} height={180} alt="Pc1" />
+          <img src={CorsairHS70} width="50%" height="50%" alt="Pc1" />
 
           <br />
           <h3 className="card-h3"></h3>
@@ -30,7 +30,7 @@ function Accessories() {
         <div className="card pc-card2">
           <br />
 
-          <img src={CorsairK70} width={180} height={150} alt="Pc2" />
+          <img src={CorsairK70} width="50%" height="50%" alt="Pc2" />
           <br />
           <h3 className="card-h3"></h3>
           <p>Corsair K70</p>
@@ -41,7 +41,7 @@ function Accessories() {
         </div>
 
         <div className="card pc-card3">
-          <img src={CorsairScim} width={180} height={180} alt="Pc3" />
+          <img src={CorsairScim} width="50%" height="50%" alt="Pc3" />
 
           <br />
           <h3 className="card-h3"></h3>
@@ -53,7 +53,7 @@ function Accessories() {
         </div>
 
         <div className="card pc-card4">
-          <img src={LogitechYeti} width={180} height={180} alt="Pc4" />
+          <img src={LogitechYeti} width="50%" height="50%" alt="Pc4" />
 
           <br />
           <h3 className="card-h3"></h3>
@@ -65,7 +65,7 @@ function Accessories() {
         </div>
 
         <div className="card pc-card5">
-          <img src={LogitechK750} width={180} height={180} alt="Pc5" />
+          <img src={LogitechK750} width="50%" height="50%" alt="Pc5" />
 
           <br />
           <h3 className="card-h3"></h3>
@@ -77,7 +77,7 @@ function Accessories() {
         </div>
 
         <div className="card pc-card6">
-          <img src={LogitechG502} width={180} height={180} alt="Pc6" />
+          <img src={LogitechG502} width="50%" height="50%" alt="Pc6" />
 
           <br />
           <h3 className="card-h3"></h3>
@@ -89,7 +89,7 @@ function Accessories() {
         </div>
 
         <div className="card pc-card7">
-          <img src={RazerKitty} width={180} height={180} alt="Pc7" />
+          <img src={RazerKitty} width="50%" height="50%" alt="Pc7" />
 
           <br />
           <h3 className="card-h3"></h3>
@@ -101,7 +101,7 @@ function Accessories() {
         </div>
 
         <div className="card pc-card8">
-          <img src={RazerNaga} width={180} height={180} alt="Pc8" />
+          <img src={RazerNaga} width="50%" height="50%" alt="Pc8" />
 
           <br />
           <h3 className="card-h3"></h3>
@@ -113,7 +113,7 @@ function Accessories() {
         </div>
 
         <div className="card pc-card9">
-          <img src={ShureSM7B} width={180} height={180} alt="Pc9" />
+          <img src={ShureSM7B} width="50%" height="50%" alt="Pc9" />
 
           <br />
           <h3 className="card-h3"></h3>

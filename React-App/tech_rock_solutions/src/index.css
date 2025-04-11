@@ -4,8 +4,8 @@ Date: April, 7 - 16 2025 */
 
 * {
   box-sizing: border-box;
-  min-width: 200px;
-  max-width: 1060px;
+  min-width: 16.14vw;
+  max-width: 85.96vw;
   margin: auto;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: rgb(0, 0, 0);
@@ -21,13 +21,15 @@ body {
 header {
   display: grid;
   grid-template-columns: 2fr;
-  grid-template-rows: 70px auto;
-  background-color: #161b4a;
+  grid-template-rows: 5.64vh auto;
+  border-top: 1px solid black;
+  background-color: #5862c5;
   padding: 20px, 0, 10px, 0;
+  border-bottom: 4px solid black;
 }
 
 nav {
-  padding-bottom: 30px;
+  padding-bottom: 2.42vh;
   font-weight: 700;
   font-size: larger;
 }
@@ -40,10 +42,10 @@ nav {
 main {
   display: grid;
   grid-template-columns: 3fr;
-  grid-template-rows: 40px auto;
-  background-color: rgb(90, 95, 90);
-  gap: 40px;
-  padding: 80px;
+  grid-template-rows: 3.22vh auto;
+  background-color: rgb(187, 196, 187);
+  gap: 3.22vh 3.22vw;
+  padding: 6.45vh 6.45vw;
   justify-content: center;
 }
 
@@ -51,11 +53,10 @@ main {
   grid-column: 1/4;
   grid-row: 1/2;
   text-align: center;
-  padding: 300px, 0, 200px, 0;
 }
 
 .card {
-  background-color: #30303d;
+  background-color: #59596b;
   border: 3px solid rgb(0, 0, 0);
   border-radius: 10px;
   box-shadow: 2px 2px hsl(0, 1%, 16%);
@@ -81,9 +82,9 @@ main {
   grid-row: 3/4;
   text-align: center;
   justify-content: center;
-  width: 275px;
-  height: 390px;
-  padding: 30px;
+  width: 21.51vw;
+  height: 30.51vh;
+  padding: 2.34vh 2.34vw;
 }
 
 .pc-card2 {
@@ -91,18 +92,18 @@ main {
   grid-row: 3/4;
   text-align: center;
   justify-content: center;
-  width: 275px;
-  height: 390px;
-  padding: 30px;
+  width: 21.51vw;
+  height: 30.51vh;
+  padding: 2.34vh 2.34vw;
 }
 .pc-card3 {
   grid-column: 3/4;
   grid-row: 3/4;
   text-align: center;
   justify-content: center;
-  width: 275px;
-  height: 390px;
-  padding: 30px;
+  width: 21.51vw;
+  height: 30.51vh;
+  padding: 2.34vh 2.34vw;
 }
 
 .pc-card4 {
@@ -110,9 +111,9 @@ main {
   grid-row: 4/5;
   text-align: center;
   justify-content: center;
-  width: 275px;
-  height: 390px;
-  padding: 30px;
+  width: 21.51vw;
+  height: 30.51vh;
+  padding: 2.34vh 2.34vw;
 }
 
 .pc-card5 {
@@ -120,18 +121,18 @@ main {
   grid-row: 4/5;
   text-align: center;
   justify-content: center;
-  width: 275px;
-  height: 390px;
-  padding: 30px;
+  width: 21.51vw;
+  height: 30.51vh;
+  padding: 2.34vh 2.34vw;
 }
 .pc-card6 {
   grid-column: 3/4;
   grid-row: 4/5;
   text-align: center;
   justify-content: center;
-  width: 275px;
-  height: 390px;
-  padding: 30px;
+  width: 21.51vw;
+  height: 30.51vh;
+  padding: 2.34vh 2.34vw;
 }
 
 .pc-card7 {
@@ -139,9 +140,9 @@ main {
   grid-row: 5/6;
   text-align: center;
   justify-content: center;
-  width: 275px;
-  height: 390px;
-  padding: 30px;
+  width: 21.51vw;
+  height: 30.51vh;
+  padding: 2.34vh 2.34vw;
 }
 
 .pc-card8 {
@@ -149,9 +150,9 @@ main {
   grid-row: 5/6;
   text-align: center;
   justify-content: center;
-  width: 275px;
-  height: 390px;
-  padding: 30px;
+  width: 21.51vw;
+  height: 30.51vh;
+  padding: 2.34vh 2.34vw;
 }
 
 .pc-card9 {
@@ -159,9 +160,9 @@ main {
   grid-row: 5/6;
   text-align: center;
   justify-content: center;
-  width: 275px;
-  height: 390px;
-  padding: 30px;
+  width: 21.51vw;
+  height: 30.51vh;
+  padding: 2.34vh 2.34vw;
 }
 
 .about-header {
@@ -198,7 +199,7 @@ footer {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   padding: 25px;
-  background-color: #161b4a;
+  background-color: #5862c5;
 }
 
 .footer-left {

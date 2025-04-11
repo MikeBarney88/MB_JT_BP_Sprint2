@@ -26,7 +26,7 @@ function App() {
   return (
     <Router>
       <header>
-        <img src={Header} alt="Our header" />
+        <img src={Header} width="100%" height="100%" alt="Our header" />
 
         <br />
         <br />
@@ -47,19 +47,19 @@ function App() {
               </div>
 
               <div className="card pc-card1">
-                <img src={Prebuilt1} width={180} height={180} alt="Pc1" />
+                <img src={Prebuilt1} width="50%" height="50%" alt="Pc1" />
 
                 <br />
                 <h3 className="card-h3">Dildo</h3>
                 <p>Ryzen 7 5700X3D | RTX 4070 Super | 32GB RAM | 2TB SSD</p>
-                <br />
+
                 <h3 className="card-h3">$1999.99</h3>
 
                 <button id="pc-button">Add to Cart</button>
               </div>
 
               <div className="card pc-card2">
-                <img src={Prebuilt2} width={180} height={180} alt="Pc2" />
+                <img src={Prebuilt2} width="50%" height="50%" alt="Pc2" />
                 <br />
                 <h3 className="card-h3">Quidi Vidi</h3>
                 <p>Ryzen 7 7800X3D | Radeon RX 9070 | 32GB RAM | 2TB SSD</p>
@@ -68,7 +68,7 @@ function App() {
               </div>
 
               <div className="card pc-card3">
-                <img src={Prebuilt3} width={180} height={180} alt="Pc3" />
+                <img src={Prebuilt3} width="50%" height="50%" alt="Pc3" />
                 <br />
                 <h3 className="card-h3">Twillingate</h3>
                 <p>
@@ -79,7 +79,7 @@ function App() {
               </div>
 
               <div className="card pc-card4">
-                <img src={Prebuilt4} width={180} height={180} alt="Pc4" />
+                <img src={Prebuilt4} width="50%" height="50%" alt="Pc4" />
                 <br />
                 <h3 className="card-h3">CBS</h3>
                 <p>Ryzen 7 7800X3D | RTX 4070 Super | 32GB RAM | 1TB SSD</p>
@@ -89,18 +89,18 @@ function App() {
               </div>
 
               <div className="card pc-card5">
-                <img src={Prebuilt5} width={180} height={180} alt="Pc5" />
+                <img src={Prebuilt5} width="50%" height="50%" alt="Pc5" />
                 <br />
                 <h3 className="card-h3">Burin</h3>
                 <p>
-                  - Ryzen 7 9800X3D | RTX 4080 Super | 64GB RAM | 1TB + 2TB SSD
+                  Ryzen 7 9800X3D | RTX 4080 Super | 64GB RAM | 1TB + 2TB SSD
                 </p>
                 <h3 className="card-h3">$2999.99</h3>
                 <button id="pc-button">Add to Cart</button>
               </div>
 
               <div className="card pc-card6">
-                <img src={Prebuilt6} width={180} height={180} alt="Pc6" />
+                <img src={Prebuilt6} width="50%" height="50%" alt="Pc6" />
                 <br />
                 <h3 className="card-h3">Springdale</h3>
                 <p>AMD Ryzen 7 7700 | RTX 4070 | 32GB RAM | 1TB SSD</p>
@@ -110,7 +110,7 @@ function App() {
               </div>
 
               <div className="card pc-card7">
-                <img src={Prebuilt7} width={180} height={180} alt="Pc7" />
+                <img src={Prebuilt7} width="50%" height="50%" alt="Pc7" />
                 <br />
                 <h3 className="card-h3">Corner Brook</h3>
                 <p>
@@ -123,7 +123,7 @@ function App() {
               </div>
 
               <div className="card pc-card8">
-                <img src={Prebuilt8} width={180} height={180} alt="Pc8" />
+                <img src={Prebuilt8} width="50%" height="50%" alt="Pc8" />
                 <br />
                 <h3 className="card-h3">St. John's</h3>
                 <p>
@@ -135,7 +135,7 @@ function App() {
               </div>
 
               <div className="card pc-card9">
-                <img src={Prebuilt9} width={180} height={180} alt="Pc9" />
+                <img src={Prebuilt9} width="50%" height="50%" alt="Pc9" />
                 <br />
                 <h3 className="card-h3">Cape Spear</h3>
                 <p>
@@ -230,7 +230,7 @@ function App() {
 
         <Route path="/Cart" element={<ShoppingCart />} />
         <Route path="/Accessories" element={<Accessories />} />
-        <Route path="/ProductDetails" element={<ProductDetails/>}/>
+        <Route path="/ProductDetails" element={<ProductDetails />} />
       </Routes>
 
       <footer>

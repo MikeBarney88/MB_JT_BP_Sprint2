@@ -5,6 +5,7 @@ const ProductDetails = () => {
         <img src={null} alt="" />
 
         <h3>PC Name:</h3>
+        <br />
         <h1>Specs</h1>
 
         <table className="specs-table">
