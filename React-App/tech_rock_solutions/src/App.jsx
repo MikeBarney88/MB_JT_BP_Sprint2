@@ -51,7 +51,9 @@ function App() {
 
                 <br />
                 <h3 className="card-h3">Dildo</h3>
-                <p>Ryzen 7 5700X3D | RTX 4070 Super | 32GB RAM | 2TB SSD</p>
+                <p>
+                  Ryzen 7 5700X3D | RTX 4070 Super | 32GB RAM | 1TB + 2TB SSD
+                </p>
 
                 <h3 className="card-h3">$1999.99</h3>
 
@@ -62,7 +64,9 @@ function App() {
                 <img src={Prebuilt2} width="50%" height="50%" alt="Pc2" />
                 <br />
                 <h3 className="card-h3">Quidi Vidi</h3>
-                <p>Ryzen 7 7800X3D | Radeon RX 9070 | 32GB RAM | 2TB SSD</p>
+                <p>
+                  Ryzen 7 7800X3D | Radeon RX 9070 | 32GB RAM | 1TB + 2TB SSD
+                </p>
                 <h3 className="card-h3">$2399.99</h3>
                 <button id="pc-button">Add to Cart</button>
               </div>
@@ -72,7 +76,8 @@ function App() {
                 <br />
                 <h3 className="card-h3">Twillingate</h3>
                 <p>
-                  Intel Core i7-13700F | RTX 4070 Super | 32GB RAM | 1TB SSD
+                  Intel Core i7-13700F | RTX 4070 Super | 32GB RAM | 1TB + 2TB
+                  SSD
                 </p>
                 <h3 className="card-h3">$2599.99</h3>
                 <button id="pc-button">Add to Cart</button>
@@ -192,8 +197,8 @@ function App() {
                 <a href="http://Facebook.com">
                   <img
                     src={Facebook}
-                    width={50}
-                    height={50}
+                    width="50vw"
+                    height="50vh"
                     alt="Font Awesome"
                   />
                 </a>
@@ -201,8 +206,8 @@ function App() {
                 <a href="http://Instagram.com">
                   <img
                     src={Instagram}
-                    width={50}
-                    height={50}
+                    width="50vw"
+                    height="50vh"
                     alt="Font Awesome"
                   />
                 </a>
@@ -210,16 +215,16 @@ function App() {
                 <a href="http://Twitter.com">
                   <img
                     src={Twitter}
-                    width={50}
-                    height={50}
+                    width="50vw"
+                    height="50vh"
                     alt="Font Awesome"
                   />
                 </a>
                 <a href="http://Youtube.com">
                   <img
                     src={YouTube}
-                    width={50}
-                    height={50}
+                    width="50vw"
+                    height="50vh"
                     alt="Font Awesome"
                   />
                 </a>
