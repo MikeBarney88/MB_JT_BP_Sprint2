@@ -31,9 +31,9 @@ function App() {
         <br />
         <br />
         <nav>
-          <Link to="/">Home</Link>&nbsp;&nbsp;
-          <Link to="/Accessories">Accessories</Link> &nbsp;
-          <Link to="/Cart">Shopping Cart</Link> &nbsp;
+          <Link to="/">Home</Link>
+          <Link to="/Accessories">Accessories</Link>
+          <Link to="/Cart">Shopping Cart</Link>
           <Link to="/ProductDetails">Product Details</Link>
         </nav>
       </header>
