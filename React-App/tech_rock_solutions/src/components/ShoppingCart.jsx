@@ -18,10 +18,10 @@ function ShoppingCart() {
           ) : (
             cart.cart.map((item, index) => (
               <li key={index}>
-                {item.item1}{" "}
+                {item.name}{" "}
                 <button
-                  onClick={(e) => {
-                    removeFromCart(e.target.id, cart);
+                  onClick={() => {
+                    removeFromCart(item.id, cart);
                   }}
                   style={{ cursor: "pointer" }}
                 >

@@ -240,4 +240,26 @@ footer {
   margin-right: 5px;
 }
 
+.specs-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 30px 0;
+}
+
+.specs-table tr {
+  border: 1px solid #0a0346;
+}
+
+.specs-table td {
+  padding: 15px 0px;
+}
+
+.spec-name {
+  font-weight: bold;
+}
+
+.spec-value {
+  width: 60%;
+}
+
 /* Accessories CSS */
