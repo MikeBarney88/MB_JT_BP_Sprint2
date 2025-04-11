@@ -4,9 +4,9 @@ import CorsairScim from "../images/CorsairScim.avif";
 import LogitechYeti from "../images/LogitechYeti.avif";
 import LogitechK750 from "../images/LogitechK750.avif";
 import LogitechG502 from "../images/LogitechG502.avif";
-import RazerKitty from "../images/RazerKitty.jpg";
-import RazerNaga from "../images/RazerNaga.jpg";
-import ShureSM7B from "../images/ShureSM7B.jpg";
+import RazerKitty from "../images/RazerKitty.avif";
+import RazerBWidow from "../images/RazerBWidow.avif";
+import RazerNaga from "../images/RazerNaga.avif";
 
 function Accessories() {
   return (
@@ -101,25 +101,25 @@ function Accessories() {
         </div>
 
         <div className="card pc-card8">
-          <img src={RazerNaga} width="50%" height="50%" alt="Pc8" />
+          <img src={RazerBWidow} width="50%" height="50%" alt="Pc8" />
+
+          <br />
+          <h3 className="card-h3"></h3>
+          <p>Razer Black Widow</p>
+          <br />
+          <h3 className="card-h3">$250.00</h3>
+
+          <button id="pc-button">Add to Cart</button>
+        </div>
+
+        <div className="card pc-card9">
+          <img src={RazerNaga} width="50%" height="50%" alt="Pc9" />
 
           <br />
           <h3 className="card-h3"></h3>
           <p>Razer Naga</p>
           <br />
           <h3 className="card-h3">$150.00</h3>
-
-          <button id="pc-button">Add to Cart</button>
-        </div>
-
-        <div className="card pc-card9">
-          <img src={ShureSM7B} width="50%" height="50%" alt="Pc9" />
-
-          <br />
-          <h3 className="card-h3"></h3>
-          <p>Shures SM7B</p>
-          <br />
-          <h3 className="card-h3">$600.00</h3>
 
           <button id="pc-button">Add to Cart</button>
         </div>
