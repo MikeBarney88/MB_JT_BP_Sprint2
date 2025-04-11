@@ -64,7 +64,7 @@ main {
 }
 
 .card-h3 {
-  padding: 5px;
+  padding: 0.4vh 0.4vw;
   color: black;
 }
 
@@ -74,7 +74,7 @@ main {
   float: right;
   color: rgb(12, 76, 216);
   margin-bottom: 10px;
-  width: 20px;
+  width: 1.61vw;
 }
 
 .pc-card1 {
@@ -196,6 +196,7 @@ footer {
   grid-column: 1/-1;
   grid-row: auto;
   font-size: large;
+  border-top: 4px solid black;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   padding: 25px;
@@ -223,9 +224,9 @@ footer {
   grid-row: 3/4;
   text-align: center;
   justify-content: center;
-  width: 700px;
-  height: 800px;
-  padding: 80px;
+  width: 50.72vw;
+  height: 64.56vh;
+  padding: 6.45vh 6.45vw;
 }
 
 .h4-left {
