@@ -1,3 +1,11 @@
 {
-    "cart": [{"id": 1, "item1": "computer"}]
+  "cart": [
+    {
+        "id": "3",
+        "name": "keyboard"
+    } , {
+        "id": "4", 
+        "name": "headset"
+    }
+  ]
 }

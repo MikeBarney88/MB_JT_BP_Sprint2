@@ -5,7 +5,8 @@ export const ShoppingCartContext = createContext(null);
 
 
 //Removes items from cart through via an id filter.
-export function removeFromCart(id, context) {
+export async function removeFromCart(id, context) {
+    await fetch(`http://localhost:3000/cart/${id}`, {method: "DELETE"});
 
     context.setCart(context.cart.filter((item)=>{item.id !== id}));
 }
