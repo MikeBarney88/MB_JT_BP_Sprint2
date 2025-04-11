@@ -1,11 +1,12 @@
 {
   "cart": [
     {
-        "id": "3",
-        "name": "keyboard"
-    } , {
-        "id": "4", 
-        "name": "headset"
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "name": "mouse",
+      "quantity": "2"
     }
   ]
 }
