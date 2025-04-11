@@ -13,7 +13,7 @@ function Accessories() {
     <>
       <main>
         <div className="pc-header">
-          <h1>The Best and Baddest Computer Accessories</h1>
+          <h1>Computer Accessories</h1>
         </div>
         <div className="card pc-card1">
           <img src={CorsairHS70} width="50%" height="60%" alt="Pc1" />
