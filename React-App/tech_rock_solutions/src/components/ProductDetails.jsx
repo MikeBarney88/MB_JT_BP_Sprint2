@@ -3,31 +3,48 @@ const ProductDetails = () => {
     <main>
       <div className="card product-card">
         <img src={null} alt="" />
-        <br />
-        <h3>Pc Name:</h3>
-        <br />
+
+        <h3>PC Name:</h3>
         <h1>Specs</h1>
-        <br />
-        <hr />
-        <h4 className="h4-left">Operating System: </h4>
-        <hr />
-        <h4 className="h4-left">Processor: </h4>
-        <hr />
-        <h4 className="h4-left">Mother Board: </h4>
-        <hr />
-        <h4 className="h4-left">Graphic Card: </h4>
-        <hr />
-        <h4 className="h4-left">Memory: </h4>
-        <hr />
-        <h4 className="h4-left">Hard Drive:</h4>
-        <hr />
-        <h4 className="h4-left">USB Ports:</h4>
-        <hr />
-        <h4 className="h4-left">Connectivity:</h4>
-        <hr />
-        <br />
+
+        <table className="specs-table">
+          <tbody>
+            <tr>
+              <td className="spec-name">Operating System:</td>
+              <td className="spec-value"></td>
+            </tr>
+            <tr>
+              <td className="spec-name">Processor:</td>
+              <td className="spec-value"></td>
+            </tr>
+            <tr>
+              <td className="spec-name">Mother Board:</td>
+              <td className="spec-value"></td>
+            </tr>
+            <tr>
+              <td className="spec-name">Graphic Card:</td>
+              <td className="spec-value"></td>
+            </tr>
+            <tr>
+              <td className="spec-name">Memory:</td>
+              <td className="spec-value"></td>
+            </tr>
+            <tr>
+              <td className="spec-name">Hard Drive:</td>
+              <td className="spec-value"></td>
+            </tr>
+            <tr>
+              <td className="spec-name">USB Ports:</td>
+              <td className="spec-value"></td>
+            </tr>
+            <tr>
+              <td className="spec-name">Connectivity:</td>
+              <td className="spec-value"></td>
+            </tr>
+          </tbody>
+        </table>
+
         <h2>Cost:</h2>
-        <br />
         <button id="spec-button">Add to Cart</button>
       </div>
     </main>
