@@ -2,7 +2,7 @@ import { useContext } from "react";
 import {
   ShoppingCartContext,
   removeFromCart,
-  changeQuantityCart
+  changeQuantityCart,
 } from "../context/conShoppingCart";
 
 function ShoppingCart() {
@@ -10,23 +10,38 @@ function ShoppingCart() {
 
   return (
     <main>
+      <div className="pc-header">
+        <h1>Shopping Cart</h1>
+      </div>
       <div className="card shoppingCartInfo">
         <h1>Your Shopping Cart:</h1>
 
         <div className="cartBox">
           {cart.loading ? (
             <li>Loading...</li>
-          ) : cart.cart.length === 0 ? (<li>Your cart is empty.</li>) : (
+          ) : cart.cart.length === 0 ? (
+            <li>Your cart is empty.</li>
+          ) : (
             cart.cart.map((item, index) => (
               <li key={index}>
                 {item.name} &nbsp;
-                
-                <label htmlFor={`quantity${item.id}`}>Quantity:</label> <input type="number" min="0" defaultValue={item.quantity} id={`quantity${item.id}`} onChange={()=>{
-                  document.querySelector(`#quantity${item.id}`).blur(); 
+                <label htmlFor={`quantity${item.id}`}>Quantity:</label>{" "}
+                <input
+                  type="number"
+                  min="0"
+                  defaultValue={item.quantity}
+                  id={`quantity${item.id}`}
+                  onChange={() => {
+                    document.querySelector(`#quantity${item.id}`).blur();
 
-                  changeQuantityCart(item, document.querySelector(`#quantity${item.id}`).value, cart);
-                }}/> &nbsp;
-
+                    changeQuantityCart(
+                      item,
+                      document.querySelector(`#quantity${item.id}`).value,
+                      cart
+                    );
+                  }}
+                />{" "}
+                &nbsp;
                 <button
                   onClick={() => {
                     removeFromCart(item.id, cart);

@@ -33,8 +33,8 @@ function App() {
         <nav>
           <Link to="/">Home</Link>
           <Link to="/Accessories">Accessories</Link>
-          <Link to="/Cart">Shopping Cart</Link>
           <Link to="/ProductDetails">Product Details</Link>
+          <Link to="/Cart">Shopping Cart</Link>
         </nav>
       </header>
       <Routes>

@@ -1,10 +1,15 @@
 const ProductDetails = () => {
   return (
     <main>
+      <div className="pc-header">
+        <h1>Product Details</h1>
+      </div>
+
       <div className="card product-card">
         <img src={null} alt="" />
 
         <h3>PC Name:</h3>
+        <h4>Quantity:</h4>
         <br />
         <h1>Specs</h1>
 
