@@ -240,7 +240,16 @@ footer {
   justify-content: center;
   width: 50.72vw;
   height: 64.56vh;
-  padding: 6.45vh 6.45vw;
+  padding: 4vh 4vw;
+}
+
+.cartBox {
+  background-color: #646574;
+  border: 0.24vh solid rgb(0, 0, 0);
+  border-radius: 0.8vh;
+  box-shadow: 0.15vh 0.15vw hsl(0, 1%, 16%);
+  margin-top: 2vh;
+  padding: 1vh;
 }
 
 /* Product Details CSS */
