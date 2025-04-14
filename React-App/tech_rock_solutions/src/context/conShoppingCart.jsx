@@ -3,6 +3,9 @@ import {useState, useEffect, createContext} from "react";
 
 export const ShoppingCartContext = createContext(null);
 
+//Adds the specified item to the cart based on button press.
+
+
 
 //Removes items from cart through via an id filter.
 export async function removeFromCart(id, context) {
