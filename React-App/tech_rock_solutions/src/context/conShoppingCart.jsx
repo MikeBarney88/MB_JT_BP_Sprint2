@@ -1,10 +1,8 @@
 import {useState, useEffect, createContext} from "react";
+import {useLocation} from "react-router-dom";
 
 
 export const ShoppingCartContext = createContext(null);
-
-//Adds the specified item to the cart based on button press.
-
 
 
 //Removes items from cart through via an id filter.
@@ -57,8 +55,24 @@ export function ShoppingCartProvider(props) {
     }, [])
 
 
+    //Adds the specified item to the cart based on button press.
+    async function addToCart(e) {
+        const selectedName = e.target.previousSibling.previousSibling.previousSibling.innerText;
+
+        const res = await fetch("http://localhost:3000/products")
+        const data = await res.json();
+
+        let selectedProduct = (!data[0].pc.filter((c)=>c.pcname === selectedName).length > 0) ? data[0].accessories.filter((a)=>a.acname === selectedName)[0] : data[0].pc.filter((c)=> c.pcname === selectedName)[0];
+
+        console.log(selectedProduct);
+        fetch("http://localhost:3000/cart", {method: "POST", header: {"Content-Type": "application/json"}, body: JSON.stringify(selectedProduct)})
+        
+        setCart(selectedProduct);
+    }
+
+
     return (
-        <ShoppingCartContext.Provider value={{cart, setCart, loading, setLoading}}>
+        <ShoppingCartContext.Provider value={{cart, setCart, loading, setLoading, addToCart}}>
             {props.children}
         </ShoppingCartContext.Provider>
     )

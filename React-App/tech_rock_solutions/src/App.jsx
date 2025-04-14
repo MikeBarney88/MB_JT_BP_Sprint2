@@ -16,13 +16,17 @@ import Facebook from "./images/Facebook.svg";
 import Instagram from "./images/Instagram.svg";
 import Twitter from "./images/Twitter.svg";
 import YouTube from "./images/Youtube.svg";
+import {useContext} from "react";
+import {ShoppingCartContext} from "./context/conShoppingCart";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ShoppingCart from "./components/ShoppingCart";
 import Accessories from "./components/Accessories";
 import ProductDetails from "./components/ProductDetails";
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom";
 
 function App() {
+  const cart = useContext(ShoppingCartContext);
+
   return (
     <Router>
       <header>
@@ -57,7 +61,7 @@ function App() {
 
                 <h3 className="card-h3">$1999.99</h3>
 
-                <button id="pc-button">Add to Cart</button>
+                <button id="pc-button" onClick={(e)=>cart.addToCart(e)}>Add to Cart</button>
               </div>
 
               <div className="card pc-card2">
@@ -68,7 +72,7 @@ function App() {
                   Ryzen 7 7800X3D | Radeon RX 9070 | 32GB RAM | 1TB + 2TB SSD
                 </p>
                 <h3 className="card-h3">$2399.99</h3>
-                <button id="pc-button">Add to Cart</button>
+                <button id="pc-button" onClick={(e)=>cart.addToCart(e)}>Add to Cart</button>
               </div>
 
               <div className="card pc-card3">
@@ -80,7 +84,7 @@ function App() {
                   SSD
                 </p>
                 <h3 className="card-h3">$2599.99</h3>
-                <button id="pc-button">Add to Cart</button>
+                <button id="pc-button" onClick={(e)=>cart.addToCart(e)}>Add to Cart</button>
               </div>
 
               <div className="card pc-card4">
@@ -90,7 +94,7 @@ function App() {
                 <p>Ryzen 7 7800X3D | RTX 4070 Super | 32GB RAM | 1TB SSD</p>
                 <br />
                 <h3 className="card-h3">$2899.99</h3>
-                <button id="pc-button">Add to Cart</button>
+                <button id="pc-button" onClick={(e)=>cart.addToCart(e)}>Add to Cart</button>
               </div>
 
               <div className="card pc-card5">
@@ -101,7 +105,7 @@ function App() {
                   Ryzen 7 9800X3D | RTX 4080 Super | 64GB RAM | 1TB + 2TB SSD
                 </p>
                 <h3 className="card-h3">$2999.99</h3>
-                <button id="pc-button">Add to Cart</button>
+                <button id="pc-button" onClick={(e)=>cart.addToCart(e)}>Add to Cart</button>
               </div>
 
               <div className="card pc-card6">
@@ -111,7 +115,7 @@ function App() {
                 <p>AMD Ryzen 7 7700 | RTX 4070 | 32GB RAM | 1TB SSD</p>
                 <br />
                 <h3 className="card-h3">$3199.99</h3>
-                <button id="pc-button">Add to Cart</button>
+                <button id="pc-button" onClick={(e)=>cart.addToCart(e)}>Add to Cart</button>
               </div>
 
               <div className="card pc-card7">
@@ -124,7 +128,7 @@ function App() {
                 </p>
 
                 <h3 className="card-h3">$3399.99</h3>
-                <button id="pc-button">Add to Cart</button>
+                <button id="pc-button" onClick={(e)=>cart.addToCart(e)}>Add to Cart</button>
               </div>
 
               <div className="card pc-card8">
@@ -136,7 +140,7 @@ function App() {
                 </p>
 
                 <h3 className="card-h3">$3799.99</h3>
-                <button id="pc-button">Add to Cart</button>
+                <button id="pc-button" onClick={(e)=>cart.addToCart(e)}>Add to Cart</button>
               </div>
 
               <div className="card pc-card9">
@@ -148,7 +152,7 @@ function App() {
                 </p>
 
                 <h3 className="card-h3">$5999.99</h3>
-                <button id="pc-button">Add to Cart</button>
+                <button id="pc-button" onClick={(e)=>cart.addToCart(e)}>Add to Cart</button>
               </div>
 
               <div className="about-header">

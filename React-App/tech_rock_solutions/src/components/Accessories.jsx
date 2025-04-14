@@ -7,8 +7,12 @@ import LogitechG502 from "../images/LogitechG502.avif";
 import RazerKitty from "../images/RazerKitty.avif";
 import RazerBWidow from "../images/RazerBWidow.avif";
 import RazerNaga from "../images/RazerNaga.avif";
+import {useContext} from "react";
+import {ShoppingCartContext} from "../context/conShoppingCart";
 
 function Accessories() {
+  const cart = useContext(ShoppingCartContext);
+
   return (
     <>
       <main>
@@ -24,7 +28,7 @@ function Accessories() {
           <br />
           <h3 className="card-h3">$100.00</h3>
 
-          <button id="pc-button">Add to Cart</button>
+          <button id="pc-button" onClick={(e)=>cart.addToCart(e)}>Add to Cart</button>
         </div>
 
         <div className="card pc-card2">
@@ -35,7 +39,7 @@ function Accessories() {
           <br />
           <h3 className="card-h3">$200.00</h3>
 
-          <button id="pc-button">Add to Cart</button>
+          <button id="pc-button" onClick={(e)=>cart.addToCart(e)}>Add to Cart</button>
         </div>
 
         <div className="card pc-card3">
@@ -47,7 +51,7 @@ function Accessories() {
           <br />
           <h3 className="card-h3">$199.99</h3>
 
-          <button id="pc-button">Add to Cart</button>
+          <button id="pc-button" onClick={(e)=>cart.addToCart(e)}>Add to Cart</button>
         </div>
 
         <div className="card pc-card4">
@@ -59,7 +63,7 @@ function Accessories() {
           <br />
           <h3 className="card-h3">$424.99</h3>
 
-          <button id="pc-button">Add to Cart</button>
+          <button id="pc-button" onClick={(e)=>cart.addToCart(e)}>Add to Cart</button>
         </div>
 
         <div className="card pc-card5">
@@ -71,7 +75,7 @@ function Accessories() {
           <br />
           <h3 className="card-h3">$100.00</h3>
 
-          <button id="pc-button">Add to Cart</button>
+          <button id="pc-button" onClick={(e)=>cart.addToCart(e)}>Add to Cart</button>
         </div>
 
         <div className="card pc-card6">
@@ -83,7 +87,7 @@ function Accessories() {
           <br />
           <h3 className="card-h3">$200.00</h3>
 
-          <button id="pc-button">Add to Cart</button>
+          <button id="pc-button" onClick={(e)=>cart.addToCart(e)}>Add to Cart</button>
         </div>
 
         <div className="card pc-card7">
@@ -95,7 +99,7 @@ function Accessories() {
           <br />
           <h3 className="card-h3">$300.00</h3>
 
-          <button id="pc-button">Add to Cart</button>
+          <button id="pc-button" onClick={(e)=>cart.addToCart(e)}>Add to Cart</button>
         </div>
 
         <div className="card pc-card8">
@@ -107,7 +111,7 @@ function Accessories() {
           <br />
           <h3 className="card-h3">$250.00</h3>
 
-          <button id="pc-button">Add to Cart</button>
+          <button id="pc-button" onClick={(e)=>cart.addToCart(e)}>Add to Cart</button>
         </div>
 
         <div className="card pc-card9">
@@ -119,7 +123,7 @@ function Accessories() {
           <br />
           <h3 className="card-h3">$150.00</h3>
 
-          <button id="pc-button">Add to Cart</button>
+          <button id="pc-button" onClick={(e)=>cart.addToCart(e)}>Add to Cart</button>
         </div>
       </main>
     </>
