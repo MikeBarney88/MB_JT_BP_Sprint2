@@ -4,6 +4,7 @@
       "pc": [
         {
           "pcname": "Dildo",
+          "pcimg": "src/images/Prebuilt1.webp",
           "pcid": "1",
           "specs": {
             "os": "Windows 11 Home",
@@ -20,6 +21,7 @@
         },
         {
           "pcname": "Quidi Vidi",
+          "pcimg": "src/images/Prebuilt2.webp",
           "pcid": "2",
           "specs": {
             "os": "Windows 11 Home",
@@ -36,6 +38,7 @@
         },
         {
           "pcname": "Twillingate",
+          "pcimg": "src/images/Prebuilt3.webp",
           "pcid": "3",
           "specs": {
             "os": "Windows 11 Home",
@@ -52,6 +55,7 @@
         },
         {
           "pcname": "CBS",
+          "pcimg": "src/images/Prebuilt4.png",
           "pcid": "4",
           "specs": {
             "os": "Windows 11 Home",
@@ -68,6 +72,7 @@
         },
         {
           "pcname": "Burin",
+          "pcimg": "src/images/Prebuilt5.avif",
           "pcid": "5",
           "specs": {
             "os": "Windows 11 Home",
@@ -84,6 +89,7 @@
         },
         {
           "pcname": "Springdale",
+          "pcimg": "src/images/Prebuilt6.webp",
           "pcid": "6",
           "specs": {
             "os": "Windows 11 Pro",
@@ -100,6 +106,7 @@
         },
         {
           "pcname": "Corner Brook",
+          "pcimg": "src/images/Prebuilt7.webp",
           "pcid": "7",
           "specs": {
             "os": "Windows 11 Home",
@@ -116,6 +123,7 @@
         },
         {
           "pcname": "St. John's",
+          "pcimg": "src/images/Prebuilt8.webp",
           "pcid": "8",
           "specs": {
             "os": "Windows 11 Home",
@@ -132,6 +140,7 @@
         },
         {
           "pcname": "Cape Spear",
+          "pcimg": "src/images/Prebuilt9.png",
           "pcid": "9",
           "specs": {
             "os": "Windows 11 Home",
@@ -202,27 +211,8 @@
           "price": "150.00",
           "stock": "23"
         }
-      ],
-      "id": "fdf6"
+      ]
     }
   ],
-  "cart": [
-    {
-      "id": "20b4",
-      "pcname": "Dildo",
-      "pcid": "1",
-      "specs": {
-        "os": "Windows 11 Home",
-        "processor": "AMD Ryzen 7 5700X3D",
-        "mobo": "MSI PRO B550M-VC WIFI",
-        "graphics": "MSI NVIDIA GeForce RTX 4070 Super",
-        "memory": "Kingston Fury Beast 32GB RAM 3200MHz",
-        "storage": "1TB HDD + 2TB SSD",
-        "ports": "2 USB 3.0, 2 USB 2.0",
-        "network": "Ethernet and WiFi"
-      },
-      "price": "1999.99",
-      "stock": "5"
-    }
-  ]
+  "cart": []
 }

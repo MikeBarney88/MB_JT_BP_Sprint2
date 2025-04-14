@@ -260,8 +260,16 @@ footer {
   text-align: center;
   justify-content: center;
   width: 50.72vw;
-  height: 64.56vh;
+  height: 80.56vh;
   padding: 6.45vh 6.45vw;
+}
+
+.img-left {
+  float: left;
+}
+
+.text-right {
+  text-align: right;
 }
 
 .h4-left {
