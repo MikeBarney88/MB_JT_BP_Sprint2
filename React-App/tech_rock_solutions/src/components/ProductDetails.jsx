@@ -1,3 +1,5 @@
+import Prebuilt1 from "../images/Prebuilt1.webp";
+
 const ProductDetails = () => {
   return (
     <main>
@@ -6,13 +8,17 @@ const ProductDetails = () => {
       </div>
 
       <div className="card product-card">
-        <img src={null} alt="" />
-
-        <h3>PC Name:</h3>
-        <h4>Quantity:</h4>
+        <img
+          className="img-left"
+          src={Prebuilt1}
+          width="250vw"
+          height="250vh"
+          alt="Pc"
+        />
         <br />
-        <h1>Specs</h1>
-
+        <h3 className="text-right">PC Name:</h3>
+        <h4 className="text-right">Quantity:</h4>
+        <br />
         <table className="specs-table">
           <tbody>
             <tr>
@@ -36,7 +42,7 @@ const ProductDetails = () => {
               <td className="spec-value"></td>
             </tr>
             <tr>
-              <td className="spec-name">Hard Drive:</td>
+              <td className="spec-name">Storage:</td>
               <td className="spec-value"></td>
             </tr>
             <tr>
@@ -51,6 +57,7 @@ const ProductDetails = () => {
         </table>
 
         <h2>Cost:</h2>
+        <br />
         <button id="spec-button">Add to Cart</button>
       </div>
     </main>
