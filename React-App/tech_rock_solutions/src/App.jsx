@@ -50,7 +50,11 @@ function App() {
                 <img src={Prebuilt1} width="50%" height="50%" alt="Pc1" />
 
                 <br />
-                <h3 className="card-h3">Dildo</h3>
+                <h3 className="card-h3">
+                  <Link to="/ProductDetails" state={{ id: "Dildo" }}>
+                    Dildo
+                  </Link>
+                </h3>
                 <p>
                   Ryzen 7 5700X3D | RTX 4070 Super | 32GB RAM | 1TB + 2TB SSD
                 </p>
@@ -63,7 +67,11 @@ function App() {
               <div className="card pc-card2">
                 <img src={Prebuilt2} width="50%" height="50%" alt="Pc2" />
                 <br />
-                <h3 className="card-h3">Quidi Vidi</h3>
+                <h3 className="card-h3">
+                  <Link to="/ProductDetails" state={{ id: "Quidi Vidi" }}>
+                    Quidi Vidi
+                  </Link>
+                </h3>
                 <p>
                   Ryzen 7 7800X3D | Radeon RX 9070 | 32GB RAM | 1TB + 2TB SSD
                 </p>
@@ -74,7 +82,11 @@ function App() {
               <div className="card pc-card3">
                 <img src={Prebuilt3} width="50%" height="50%" alt="Pc3" />
                 <br />
-                <h3 className="card-h3">Twillingate</h3>
+                <h3 className="card-h3">
+                  <Link to="/ProductDetails" state={{ id: "Twillingate" }}>
+                    Twillingate
+                  </Link>
+                </h3>
                 <p>
                   Intel Core i7-13700F | RTX 4070 Super | 32GB RAM | 1TB + 2TB
                   SSD
@@ -86,7 +98,12 @@ function App() {
               <div className="card pc-card4">
                 <img src={Prebuilt4} width="50%" height="50%" alt="Pc4" />
                 <br />
-                <h3 className="card-h3">CBS</h3>
+                <h3 className="card-h3">
+                  {" "}
+                  <Link to="/ProductDetails" state={{ id: "CBS" }}>
+                    CBS
+                  </Link>
+                </h3>
                 <p>Ryzen 7 7800X3D | RTX 4070 Super | 32GB RAM | 1TB SSD</p>
                 <br />
                 <h3 className="card-h3">$2899.99</h3>
@@ -96,7 +113,11 @@ function App() {
               <div className="card pc-card5">
                 <img src={Prebuilt5} width="50%" height="50%" alt="Pc5" />
                 <br />
-                <h3 className="card-h3">Burin</h3>
+                <h3 className="card-h3">
+                  <Link to="/ProductDetails" state={{ id: "Burin" }}>
+                    Burin
+                  </Link>
+                </h3>
                 <p>
                   Ryzen 7 9800X3D | RTX 4080 Super | 64GB RAM | 1TB + 2TB SSD
                 </p>
@@ -107,7 +128,11 @@ function App() {
               <div className="card pc-card6">
                 <img src={Prebuilt6} width="50%" height="50%" alt="Pc6" />
                 <br />
-                <h3 className="card-h3">Springdale</h3>
+                <h3 className="card-h3">
+                  <Link to="/ProductDetails" state={{ id: "Springdale" }}>
+                    Springdale
+                  </Link>
+                </h3>
                 <p>AMD Ryzen 7 7700 | RTX 4070 | 32GB RAM | 1TB SSD</p>
                 <br />
                 <h3 className="card-h3">$3199.99</h3>
@@ -117,7 +142,11 @@ function App() {
               <div className="card pc-card7">
                 <img src={Prebuilt7} width="50%" height="50%" alt="Pc7" />
                 <br />
-                <h3 className="card-h3">Corner Brook</h3>
+                <h3 className="card-h3">
+                  <Link to="/ProductDetails" state={{ id: "Corner Brook" }}>
+                    Corner Brook
+                  </Link>
+                </h3>
                 <p>
                   Intel Core i9-14900KF | RTX 4080 Super | 64GB RAM | 2TB + 2TB
                   SSD
@@ -130,7 +159,12 @@ function App() {
               <div className="card pc-card8">
                 <img src={Prebuilt8} width="50%" height="50%" alt="Pc8" />
                 <br />
-                <h3 className="card-h3">St. John's</h3>
+                <h3 className="card-h3">
+                  {" "}
+                  <Link to="/ProductDetails" state={{ id: "St. John's" }}>
+                    St. John's
+                  </Link>
+                </h3>
                 <p>
                   Ryzen 7 7800X3D | RTX 4080 Super | 32GB RAM | 1TB + 2TB SSD
                 </p>
@@ -142,7 +176,11 @@ function App() {
               <div className="card pc-card9">
                 <img src={Prebuilt9} width="50%" height="50%" alt="Pc9" />
                 <br />
-                <h3 className="card-h3">Cape Spear</h3>
+                <h3 className="card-h3">
+                  <Link to="/ProductDetails" state={{ id: "Cape Spear" }}>
+                    Cape Spear
+                  </Link>
+                </h3>
                 <p>
                   Ryzen 9 7800X3D | RTX 5090 Ti Super | 64GB RAM | 2TB + 2TB M.2
                 </p>

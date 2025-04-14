@@ -1,191 +1,218 @@
 {
-    "products": [{
-        "pc": [
-            {
-                "pcname": "Dildo",
-                "pcid" : "1",
-                "specs": {
-                    "os": "Windows 11 Home",
-                    "processor": "AMD Ryzen 7 5700X3D",
-                    "mobo": "MSI PRO B550M-VC WIFI",
-                    "graphics": "MSI NVIDIA GeForce RTX 4070 Super",
-                    "memory": "Kingston Fury Beast 32GB RAM 3200MHz",
-                    "storage": "1TB HDD + 2TB SSD",
-                    "ports": "2 USB 3.0, 2 USB 2.0",
-                    "network": "Ethernet and WiFi"
-                },
-                "price": "1999.99",
-                "stock": "5"
-            } , {
-                "pcname": "Quidi Vidi",
-                "pcid" : "2",
-                "specs": {
-                    "os": "Windows 11 Home",
-                    "processor": "AMD Ryzen 7 7800X3D",
-                    "mobo": "Gigabyte X670 AORUS Elite WiFi DDR5",
-                    "graphics": "Gigabyte AMD Radeon RX 9070",
-                    "memory": "Kingston Fury Beast 32GB RAM 5200MHz DDR5",
-                    "storage": "1TB HDD + 2TB NVMe SSD",
-                    "ports": "4 USB 3.0, 4 USB 2.0",
-                    "network": "Ethernet and WiFi"
-                },
-                "price": "2399.99",
-                "stock": "4"
-            } , {
-                "pcname": "Twillingate",
-                "pcid" : "3",
-                "specs": {
-                    "os": "Windows 11 Home",
-                    "processor": "Intel Core i7-13700F",
-                    "mobo": "Gigabyte B760 DS3H AC DDR4",
-                    "graphics": "MSI NVIDIA GeForce RTX 4070 Super",
-                    "memory": "Kingston Fury Beast 32GB RAM 3200MHz DDR4",
-                    "storage": "1TB HDD + 2TB NVMe SSD",
-                    "ports": "2 USB 3.0, 2 USB 2.0",
-                    "network": "Ethernet and WiFi"
-                },
-                "price": "2599.99",
-                "stock": "6"
-            } , {
-                "pcname": "CBS",
-                "pcid" : "4",
-                "specs": {
-                    "os": "Windows 11 Home",
-                    "processor": "AMD Ryzen 7 7800X3D",
-                    "mobo": "MSI MAG B650 Tomahawk WiFi DDR5",
-                    "graphics": "MSI NVIDIA GeForce RTX 4070 Super",
-                    "memory": "Kingston Fury Beast 32GB RAM 5200MHz DDR5",
-                    "storage": "1TB NVMe SSD",
-                    "ports": "4 USB 3.0",
-                    "network": "Ethernet and WiFi"
-                },
-                "price": "2899.99",
-                "stock": "3"
-            } , {
-                "pcname": "Burin",
-                "pcid" : "5",
-                "specs": {
-                    "os": "Windows 11 Home",
-                    "processor": "AMD Ryzen 7 9800X3D",
-                    "mobo": "MSI PRO X870-P WiFi",
-                    "graphics": "NVIDIA GeForce RTX 4080 Super",
-                    "memory": "Kingston Fury Renegade 64GB 6400MHz",
-                    "storage": "1TB NVMe SSD + 2TB NVMe SSD",
-                    "ports": "4 USB 3.0, 4 USB 2.0",
-                    "network": "Ethernet and WiFi"
-                },
-                "price": "2999.99",
-                "stock": "3"
-            } , {
-                "pcname": "Springdale",
-                "pcid" : "6",
-                "specs": {
-                    "os": "Windows 11 Pro",
-                    "processor": "AMD Ryzen 7 7700",
-                    "mobo": "MSI PRO B650M-A WiFi DDR5",
-                    "graphics": "MSI NVIDIA GeForce RTX 4070",
-                    "memory": "Kingston Fury Renegade 32GB DDR5 6400MHz",
-                    "storage": "1TB NVMe SSD",
-                    "ports": "2 USB 3.0, 2 USB 2.0",
-                    "network": "Ethernet and WiFi"
-                },
-                "price": "3199.99",
-                "stock": "4"
-            } , {
-                "pcname": "Corner Brook",
-                "pcid" : "7",
-                "specs": {
-                    "os": "Windows 11 Home",
-                    "processor": "Intel Core i9-14900KF",
-                    "mobo": "ASUS ROG Maximus Z790 Hero WiFi",
-                    "graphics": "ZOTAC NVIDIA GeForce RTX 4080 Super",
-                    "memory": "Kingston Fury Renegade 64GB 6400MHz",
-                    "storage": "1TB HDD + 2TB SSD",
-                    "ports": "4 USB 3.0, 4 USB 2.0",
-                    "network": "Ethernet and WiFi"
-                },
-                "price": "3399.99",
-                "stock": "5"
-            } , {
-                "pcname": "St. John's",
-                "pcid" : "8",
-                "specs": {
-                    "os": "Windows 11 Home",
-                    "processor": "AMD Ryzen 7 7800X3D",
-                    "mobo": "MSI MPG B650 Edge WiFi DDR5",
-                    "graphics": "ZOTAC NVIDIA GeForce RTX 4080 Super",
-                    "memory": "Kingston Fury Beast 32GB RAM 5200MHz",
-                    "storage": "1TB HDD + 2TB SSD",
-                    "ports": "4 USB 3.0, 4 USB 2.0",
-                    "network": "Ethernet and WiFi"
-                },
-                "price": "3799.99",
-                "stock": "5"
-            } , {
-                "pcname": "Cape Spear",
-                "pcid" : "9",
-                "specs": {
-                    "os": "Windows 11 Home",
-                    "processor": "AMD Ryzen 7 7800X3D",
-                    "mobo": "MSI PRO X870-P WiFi",
-                    "graphics": "Gigabyte GeForce RTX 4080 Super WINDFORCE V2",
-                    "memory": "Kingston Fury Renegade 32GB RAM DDR5 6000MHz",
-                    "storage": "2TB SDD + 2TB SSD M.2",
-                    "ports": "4 USB 3.0",
-                    "network": "Ethernet and WiFi"
-                },
-                "price": "5999.99",
-                "stock": "2"
-            }
-        ],
-        "accessories": [
-            {
-                "acname": "Corsair HS70",
-                "acid": "1",
-                "price": "100.00",
-                "stock": "10"
-            } , {
-                "acname": "Corsair K70",
-                "acid": "2",
-                "price": "200.00",
-                "stock": "12"
-            } , {
-                "acname": "Corsair Scimitar",
-                "acid": "3",
-                "price": "199.99",
-                "stock": "26"
-            } , {
-                "acname": "Logitech Yeti",
-                "acid": "4",
-                "price": "424.99",
-                "stock": "6"
-            } , {
-                "acname": "Logitech K750",
-                "acid": "5",
-                "price": "100.00",
-                "stock": "14"
-            } , {
-                "acname": "Logitech G502",
-                "acid": "6",
-                "price": "200.00",
-                "stock": "19"
-            } , {
-                "acname": "Razer Kraken Kitty",
-                "acid": "7",
-                "price": "300.00",
-                "stock": "11"
-            } , {
-                "acname": "Razer Black Widow",
-                "acid": "8",
-                "price": "250.00",
-                "stock": "13"
-            } , {
-                "acname": "Razer Naga",
-                "acid": "9",
-                "price": "150.00",
-                "stock": "23"
-            }
-        ]
-    }],
-    "cart": []
+  "products": [
+    {
+      "pc": [
+        {
+          "pcname": "Dildo",
+          "pcimg": "src/images/Prebuilt1.webp",
+          "pcid": "1",
+          "specs": {
+            "os": "Windows 11 Home",
+            "processor": "AMD Ryzen 7 5700X3D",
+            "mobo": "MSI PRO B550M-VC WIFI",
+            "graphics": "MSI NVIDIA GeForce RTX 4070 Super",
+            "memory": "Kingston Fury Beast 32GB RAM 3200MHz",
+            "storage": "1TB HDD + 2TB SSD",
+            "ports": "2 USB 3.0, 2 USB 2.0",
+            "network": "Ethernet and WiFi"
+          },
+          "price": "1999.99",
+          "stock": "5"
+        },
+        {
+          "pcname": "Quidi Vidi",
+          "pcimg": "src/images/Prebuilt2.webp",
+          "pcid": "2",
+          "specs": {
+            "os": "Windows 11 Home",
+            "processor": "AMD Ryzen 7 7800X3D",
+            "mobo": "Gigabyte X670 AORUS Elite WiFi DDR5",
+            "graphics": "Gigabyte AMD Radeon RX 9070",
+            "memory": "Kingston Fury Beast 32GB RAM 5200MHz DDR5",
+            "storage": "1TB HDD + 2TB NVMe SSD",
+            "ports": "4 USB 3.0, 4 USB 2.0",
+            "network": "Ethernet and WiFi"
+          },
+          "price": "2399.99",
+          "stock": "4"
+        },
+        {
+          "pcname": "Twillingate",
+          "pcimg": "src/images/Prebuilt3.webp",
+          "pcid": "3",
+          "specs": {
+            "os": "Windows 11 Home",
+            "processor": "Intel Core i7-13700F",
+            "mobo": "Gigabyte B760 DS3H AC DDR4",
+            "graphics": "MSI NVIDIA GeForce RTX 4070 Super",
+            "memory": "Kingston Fury Beast 32GB RAM 3200MHz DDR4",
+            "storage": "1TB HDD + 2TB NVMe SSD",
+            "ports": "2 USB 3.0, 2 USB 2.0",
+            "network": "Ethernet and WiFi"
+          },
+          "price": "2599.99",
+          "stock": "6"
+        },
+        {
+          "pcname": "CBS",
+          "pcimg": "src/images/Prebuilt4.png",
+          "pcid": "4",
+          "specs": {
+            "os": "Windows 11 Home",
+            "processor": "AMD Ryzen 7 7800X3D",
+            "mobo": "MSI MAG B650 Tomahawk WiFi DDR5",
+            "graphics": "MSI NVIDIA GeForce RTX 4070 Super",
+            "memory": "Kingston Fury Beast 32GB RAM 5200MHz DDR5",
+            "storage": "1TB NVMe SSD",
+            "ports": "4 USB 3.0",
+            "network": "Ethernet and WiFi"
+          },
+          "price": "2899.99",
+          "stock": "3"
+        },
+        {
+          "pcname": "Burin",
+          "pcimg": "src/images/Prebuilt5.avif",
+          "pcid": "5",
+          "specs": {
+            "os": "Windows 11 Home",
+            "processor": "AMD Ryzen 7 9800X3D",
+            "mobo": "MSI PRO X870-P WiFi",
+            "graphics": "NVIDIA GeForce RTX 4080 Super",
+            "memory": "Kingston Fury Renegade 64GB 6400MHz",
+            "storage": "1TB NVMe SSD + 2TB NVMe SSD",
+            "ports": "4 USB 3.0, 4 USB 2.0",
+            "network": "Ethernet and WiFi"
+          },
+          "price": "2999.99",
+          "stock": "3"
+        },
+        {
+          "pcname": "Springdale",
+          "pcimg": "src/images/Prebuilt6.webp",
+          "pcid": "6",
+          "specs": {
+            "os": "Windows 11 Pro",
+            "processor": "AMD Ryzen 7 7700",
+            "mobo": "MSI PRO B650M-A WiFi DDR5",
+            "graphics": "MSI NVIDIA GeForce RTX 4070",
+            "memory": "Kingston Fury Renegade 32GB DDR5 6400MHz",
+            "storage": "1TB NVMe SSD",
+            "ports": "2 USB 3.0, 2 USB 2.0",
+            "network": "Ethernet and WiFi"
+          },
+          "price": "3199.99",
+          "stock": "4"
+        },
+        {
+          "pcname": "Corner Brook",
+          "pcimg": "src/images/Prebuilt7.webp",
+          "pcid": "7",
+          "specs": {
+            "os": "Windows 11 Home",
+            "processor": "Intel Core i9-14900KF",
+            "mobo": "ASUS ROG Maximus Z790 Hero WiFi",
+            "graphics": "ZOTAC NVIDIA GeForce RTX 4080 Super",
+            "memory": "Kingston Fury Renegade 64GB 6400MHz",
+            "storage": "1TB HDD + 2TB SSD",
+            "ports": "4 USB 3.0, 4 USB 2.0",
+            "network": "Ethernet and WiFi"
+          },
+          "price": "3399.99",
+          "stock": "5"
+        },
+        {
+          "pcname": "St. John's",
+          "pcimg": "src/images/Prebuilt8.webp",
+          "pcid": "8",
+          "specs": {
+            "os": "Windows 11 Home",
+            "processor": "AMD Ryzen 7 7800X3D",
+            "mobo": "MSI MPG B650 Edge WiFi DDR5",
+            "graphics": "ZOTAC NVIDIA GeForce RTX 4080 Super",
+            "memory": "Kingston Fury Beast 32GB RAM 5200MHz",
+            "storage": "1TB HDD + 2TB SSD",
+            "ports": "4 USB 3.0, 4 USB 2.0",
+            "network": "Ethernet and WiFi"
+          },
+          "price": "3799.99",
+          "stock": "5"
+        },
+        {
+          "pcname": "Cape Spear",
+          "pcimg": "src/images/Prebuilt9.png",
+          "pcid": "9",
+          "specs": {
+            "os": "Windows 11 Home",
+            "processor": "AMD Ryzen 7 7800X3D",
+            "mobo": "MSI PRO X870-P WiFi",
+            "graphics": "Gigabyte GeForce RTX 4080 Super WINDFORCE V2",
+            "memory": "Kingston Fury Renegade 32GB RAM DDR5 6000MHz",
+            "storage": "2TB SDD + 2TB SSD M.2",
+            "ports": "4 USB 3.0",
+            "network": "Ethernet and WiFi"
+          },
+          "price": "5999.99",
+          "stock": "2"
+        }
+      ],
+      "accessories": [
+        {
+          "acname": "Corsair HS70",
+          "acid": "1",
+          "price": "100.00",
+          "stock": "10"
+        },
+        {
+          "acname": "Corsair K70",
+          "acid": "2",
+          "price": "200.00",
+          "stock": "12"
+        },
+        {
+          "acname": "Corsair Scimitar",
+          "acid": "3",
+          "price": "199.99",
+          "stock": "26"
+        },
+        {
+          "acname": "Logitech Yeti",
+          "acid": "4",
+          "price": "424.99",
+          "stock": "6"
+        },
+        {
+          "acname": "Logitech K750",
+          "acid": "5",
+          "price": "100.00",
+          "stock": "14"
+        },
+        {
+          "acname": "Logitech G502",
+          "acid": "6",
+          "price": "200.00",
+          "stock": "19"
+        },
+        {
+          "acname": "Razer Kraken Kitty",
+          "acid": "7",
+          "price": "300.00",
+          "stock": "11"
+        },
+        {
+          "acname": "Razer Black Widow",
+          "acid": "8",
+          "price": "250.00",
+          "stock": "13"
+        },
+        {
+          "acname": "Razer Naga",
+          "acid": "9",
+          "price": "150.00",
+          "stock": "23"
+        }
+      ]
+    }
+  ],
+  "cart": []
 }
