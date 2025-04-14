@@ -18,12 +18,14 @@ export function changeQuantityCart(item, value, context) {
         confirm(`Are you sure? Changing ${item.name}'s quantity to 0 will cause it to be removed from your cart.`) ? removeFromCart(item.id, context) : item.quantity = 1; document.querySelector(`#quantity${item.id}`).value = 1; return;
         
     } else {
+        const restructuredItem = {...item, quantity: value};
+
         fetch(`http://localhost:3000/cart/${item.id}`, {
             method: "PUT",
             headers: {
                 "Content-Type": "application/json"
             },
-            body: item.quantity = value //fix this shi bruh
+            body: JSON.stringify(restructuredItem)
         });
 
         item.quantity = value;
