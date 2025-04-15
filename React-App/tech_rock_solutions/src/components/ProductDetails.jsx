@@ -79,7 +79,7 @@ const ProductDetails = () => {
           </tbody>
         </table>
 
-        <h2>Cost:</h2>
+        <h2>Cost: {product.price}</h2>
         <br />
         <button id="spec-button" onClick={()=>cart.addToCart(undefined, product.pcname)}>Add to Cart</button>
       </div>
