@@ -5,6 +5,8 @@ import {
   changeQuantityCart,
 } from "../context/conShoppingCart";
 import { Link } from "react-router-dom";
+import CheckOut from "./CheckOut";
+
 function ShoppingCart() {
   const cart = useContext(ShoppingCartContext);
 
@@ -14,7 +16,7 @@ function ShoppingCart() {
         <h1 className="cart-h1">Shopping Cart</h1>
       </div>
       <div className="card shoppingCartInfo">
-        <h1 className="cart-h1">Your Shopping Cart:</h1>
+        <h2 className="cart-h2">Your Shopping Cart:</h2>
 
         <div className="cartBox">
           {cart.loading ? (
@@ -63,6 +65,8 @@ function ShoppingCart() {
           )}
         </div>
       </div>
+
+      <CheckOut />
     </main>
   );
 }

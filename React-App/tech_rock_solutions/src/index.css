@@ -231,8 +231,6 @@ footer {
   grid-column: 1 / 4;
   grid-row: 2/3;
   width: 65vw;
-  min-width: 12.14vw;
-  max-width: 85.96vw;
   height: auto;
   padding: 3vh 3vw;
 }
@@ -241,11 +239,15 @@ footer {
   text-align: center;
 }
 
+.cart-h2 {
+  text-align: center;
+}
+
 li {
   font-size: medium;
   font-weight: 500;
   text-align: left;
-  padding-top: 1vh;
+  padding: 1vh;
 }
 
 .cartBox {
@@ -262,8 +264,13 @@ li {
   color: white;
   cursor: "pointer";
   float: right;
-  height: 2.2vh;
+  height: 2.5vh;
   border-radius: 0.7vw;
+  transition: background-color 0.6s;
+}
+.cart-button:hover {
+  background-color: rgb(148, 0, 0);
+  transition: background-color 0.6s;
 }
 
 .quantity {
@@ -274,6 +281,7 @@ li {
 
 .price {
   padding-left: 2vw;
+  font-size: large;
 }
 
 /* Product Details CSS */
@@ -331,4 +339,12 @@ li {
   width: 60%;
 }
 
-/* Accessories CSS */
+/* CheckOut CSS */
+
+.checkoutInfo {
+  grid-column: 1 / 4;
+  grid-row: 3/4;
+  width: 65vw;
+  height: auto;
+  padding: 3vh 3vw;
+}
