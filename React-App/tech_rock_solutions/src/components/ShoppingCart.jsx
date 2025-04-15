@@ -26,9 +26,9 @@ function ShoppingCart() {
               <li key={index}>
                 <Link
                   to="/ProductDetails"
-                  state={{ id: `${item.pcname ? item.pcname : item.acname}` }}
+                  state={{ id: `${item.name}` }}
                 >
-                  {item.pcname ? item.pcname : item.acname}
+                  {item.name}
                 </Link>
                 &nbsp;
                 <label htmlFor={`quantity${item.id}`}>Quantity:</label>{" "}
@@ -57,7 +57,7 @@ function ShoppingCart() {
                 >
                   Remove
                 </button>
-                <li className="price">${item.price}</li>
+                <li className="price">${item.price * item.quantity}</li>
               </li>
             ))
           )}

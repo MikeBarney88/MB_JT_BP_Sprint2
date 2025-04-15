@@ -43,7 +43,7 @@ const ProductDetails = () => {
           alt="Pc"
         />
         <br />
-        <h3 className="text-right">PC Name: {product.pcname}</h3>
+        <h3 className="text-right">PC Name: {product.name}</h3>
         <h4 className="text-right">In Stock: {product.stock}</h4>
         <br />
         <table className="specs-table">
@@ -87,7 +87,7 @@ const ProductDetails = () => {
         <br />
         <button
           id="spec-button"
-          onClick={() => cart.addToCart(undefined, product.pcname)}
+          onClick={() => cart.addToCart(undefined, product.name)}
         >
           Add to Cart
         </button>

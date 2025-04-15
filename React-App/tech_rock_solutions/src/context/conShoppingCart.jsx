@@ -7,7 +7,7 @@ export const ShoppingCartContext = createContext(null);
 export async function findProduct(id) {
     const res = await fetch(`http://localhost:3000/products`);
     const allProducts = await res.json();
-    const foundProduct = allProducts[0].pc.filter((c)=>c.pcname === id)[0];
+    const foundProduct = allProducts[0].pc.filter((c)=>c.name === id)[0];
 
     return foundProduct;
 }
@@ -26,6 +26,12 @@ export function changeQuantityCart(item, value, context) {
         confirm(`Are you sure? Changing ${item.name}'s quantity to 0 will cause it to be removed from your cart.`) ? removeFromCart(item.id, context) : item.quantity = 1; document.querySelector(`#quantity${item.id}`).value = 1; return;
         
     } else {
+        if ((item.quantity > item.stock) || (value > item.stock)) {
+            alert(`Sorry, we only have ${item.stock} of ${item.name} in stock at the moment. You can only order less than ${item.stock} at this time.`);
+            item.quantity = value - 1; 
+            document.querySelector(`#quantity${item.id}`).value = value - 1;
+            return;
+        }
         const restructuredItem = {...item, quantity: value};
 
         fetch(`http://localhost:3000/cart/${item.id}`, {
@@ -70,11 +76,22 @@ export function ShoppingCartProvider(props) {
 
         const res = await fetch("http://localhost:3000/products")
         const data = await res.json();
+        const productsPC = data[0].pc;
+        const productsAC = data[0].accessories;
 
-        let selectedProduct = (!data[0].pc.filter((c)=>c.pcname === selectedName).length > 0) ? data[0].accessories.filter((a)=>a.acname === selectedName)[0] : data[0].pc.filter((c)=> c.pcname === selectedName)[0];
+        const productsCombined = [...productsPC, ...productsAC];
 
-        console.log(selectedProduct);
-        fetch("http://localhost:3000/cart", {method: "POST", header: {"Content-Type": "application/json"}, body: JSON.stringify({...selectedProduct, quantity: "1"})})
+        let selectedProduct = productsCombined.filter((p)=>p.name === selectedName)[0];
+
+        if (cart.filter((c)=>c.name === selectedProduct.name).length === 0) {
+            console.log(cart)
+            fetch("http://localhost:3000/cart", {method: "POST", header: {"Content-Type": "application/json"}, body: JSON.stringify({...selectedProduct, quantity: "1"})})
+        } else {
+            const cartProduct = cart.filter((c)=>c.id === selectedProduct.id)[0];
+
+            const valueDeterminer = parseInt(cartProduct.quantity) + 1
+            changeQuantityCart(cartProduct, valueDeterminer.toString(), cart);
+        }
         
         setCart(selectedProduct);
         setLoading(true);
