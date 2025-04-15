@@ -11,10 +11,10 @@ function ShoppingCart() {
   return (
     <main>
       <div className="pc-header">
-        <h1>Shopping Cart</h1>
+        <h1 className="cart-h1">Shopping Cart</h1>
       </div>
       <div className="card shoppingCartInfo">
-        <h1>Your Shopping Cart:</h1>
+        <h1 className="cart-h1">Your Shopping Cart:</h1>
 
         <div className="cartBox">
           {cart.loading ? (
@@ -24,9 +24,10 @@ function ShoppingCart() {
           ) : (
             cart.cart.map((item, index) => (
               <li key={index}>
-                {item.pcname ? item.pcname : item.acname} &nbsp;
-                <label htmlFor={`quantity${item.id}`}>Quantity:</label>{" "}
+                {item.pcname ? item.pcname : item.acname} -&nbsp;
+                <label htmlFor={`quantity${item.id}`}>Quantity:&nbsp;</label>
                 <input
+                  className="quantity"
                   type="number"
                   min="0"
                   defaultValue={item.quantity}
@@ -40,16 +41,17 @@ function ShoppingCart() {
                       cart
                     );
                   }}
-                />{" "}
+                />
                 &nbsp;
                 <button
+                  className="cart-button"
                   onClick={() => {
                     removeFromCart(item.id, cart);
                   }}
-                  style={{ cursor: "pointer" }}
                 >
                   Remove
                 </button>
+                <li className="price">${item.price}</li>
               </li>
             ))
           )}

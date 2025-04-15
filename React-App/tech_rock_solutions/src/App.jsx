@@ -16,13 +16,13 @@ import Facebook from "./images/Facebook.svg";
 import Instagram from "./images/Instagram.svg";
 import Twitter from "./images/Twitter.svg";
 import YouTube from "./images/Youtube.svg";
-import {useContext} from "react";
-import {ShoppingCartContext} from "./context/conShoppingCart";
+import { useContext } from "react";
+import { ShoppingCartContext } from "./context/conShoppingCart";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ShoppingCart from "./components/ShoppingCart";
 import Accessories from "./components/Accessories";
 import ProductDetails from "./components/ProductDetails";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function App() {
   const cart = useContext(ShoppingCartContext);
@@ -50,7 +50,7 @@ function App() {
               </div>
 
               <div className="card pc-card1">
-                <img src={Prebuilt1} width="50%" height="50%" alt="Pc1" />
+                <img src={Prebuilt1} width="100%" height="50%" alt="Pc1" />
 
                 <br />
                 <h3 className="card-h3">
@@ -64,11 +64,13 @@ function App() {
 
                 <h3 className="card-h3">$1999.99</h3>
 
-                <button id="pc-button" onClick={(e)=>cart.addToCart(e)}>Add to Cart</button>
+                <button id="pc-button" onClick={(e) => cart.addToCart(e)}>
+                  Add to Cart
+                </button>
               </div>
 
               <div className="card pc-card2">
-                <img src={Prebuilt2} width="50%" height="50%" alt="Pc2" />
+                <img src={Prebuilt2} width="100%" height="50%" alt="Pc2" />
                 <br />
                 <h3 className="card-h3">
                   <Link to="/ProductDetails" state={{ id: "Quidi Vidi" }}>
@@ -79,11 +81,13 @@ function App() {
                   Ryzen 7 7800X3D | Radeon RX 9070 | 32GB RAM | 1TB + 2TB SSD
                 </p>
                 <h3 className="card-h3">$2399.99</h3>
-                <button id="pc-button" onClick={(e)=>cart.addToCart(e)}>Add to Cart</button>
+                <button id="pc-button" onClick={(e) => cart.addToCart(e)}>
+                  Add to Cart
+                </button>
               </div>
 
               <div className="card pc-card3">
-                <img src={Prebuilt3} width="50%" height="50%" alt="Pc3" />
+                <img src={Prebuilt3} width="100%" height="50%" alt="Pc3" />
                 <br />
                 <h3 className="card-h3">
                   <Link to="/ProductDetails" state={{ id: "Twillingate" }}>
@@ -95,26 +99,29 @@ function App() {
                   SSD
                 </p>
                 <h3 className="card-h3">$2599.99</h3>
-                <button id="pc-button" onClick={(e)=>cart.addToCart(e)}>Add to Cart</button>
+                <button id="pc-button" onClick={(e) => cart.addToCart(e)}>
+                  Add to Cart
+                </button>
               </div>
 
               <div className="card pc-card4">
-                <img src={Prebuilt4} width="50%" height="50%" alt="Pc4" />
+                <img src={Prebuilt4} width="100%" height="50%" alt="Pc4" />
                 <br />
                 <h3 className="card-h3">
-                  {" "}
                   <Link to="/ProductDetails" state={{ id: "CBS" }}>
                     CBS
                   </Link>
                 </h3>
                 <p>Ryzen 7 7800X3D | RTX 4070 Super | 32GB RAM | 1TB SSD</p>
-                <br />
+
                 <h3 className="card-h3">$2899.99</h3>
-                <button id="pc-button" onClick={(e)=>cart.addToCart(e)}>Add to Cart</button>
+                <button id="pc-button" onClick={(e) => cart.addToCart(e)}>
+                  Add to Cart
+                </button>
               </div>
 
               <div className="card pc-card5">
-                <img src={Prebuilt5} width="50%" height="50%" alt="Pc5" />
+                <img src={Prebuilt5} width="100%" height="50%" alt="Pc5" />
                 <br />
                 <h3 className="card-h3">
                   <Link to="/ProductDetails" state={{ id: "Burin" }}>
@@ -125,25 +132,29 @@ function App() {
                   Ryzen 7 9800X3D | RTX 4080 Super | 64GB RAM | 1TB + 2TB SSD
                 </p>
                 <h3 className="card-h3">$2999.99</h3>
-                <button id="pc-button" onClick={(e)=>cart.addToCart(e)}>Add to Cart</button>
+                <button id="pc-button" onClick={(e) => cart.addToCart(e)}>
+                  Add to Cart
+                </button>
               </div>
 
               <div className="card pc-card6">
-                <img src={Prebuilt6} width="50%" height="50%" alt="Pc6" />
+                <img src={Prebuilt6} width="100%" height="50%" alt="Pc6" />
                 <br />
                 <h3 className="card-h3">
                   <Link to="/ProductDetails" state={{ id: "Springdale" }}>
                     Springdale
                   </Link>
                 </h3>
-                <p>AMD Ryzen 7 7700 | RTX 4070 | 32GB RAM | 1TB SSD</p>
-                <br />
+                <p>AMD Ryzen 7 7700 | RTX 4070 | 32GB RAM | 1TB + 2TB SSD</p>
+
                 <h3 className="card-h3">$3199.99</h3>
-                <button id="pc-button" onClick={(e)=>cart.addToCart(e)}>Add to Cart</button>
+                <button id="pc-button" onClick={(e) => cart.addToCart(e)}>
+                  Add to Cart
+                </button>
               </div>
 
               <div className="card pc-card7">
-                <img src={Prebuilt7} width="50%" height="50%" alt="Pc7" />
+                <img src={Prebuilt7} width="100%" height="50%" alt="Pc7" />
                 <br />
                 <h3 className="card-h3">
                   <Link to="/ProductDetails" state={{ id: "Corner Brook" }}>
@@ -156,11 +167,13 @@ function App() {
                 </p>
 
                 <h3 className="card-h3">$3399.99</h3>
-                <button id="pc-button" onClick={(e)=>cart.addToCart(e)}>Add to Cart</button>
+                <button id="pc-button" onClick={(e) => cart.addToCart(e)}>
+                  Add to Cart
+                </button>
               </div>
 
               <div className="card pc-card8">
-                <img src={Prebuilt8} width="50%" height="50%" alt="Pc8" />
+                <img src={Prebuilt8} width="100%" height="50%" alt="Pc8" />
                 <br />
                 <h3 className="card-h3">
                   {" "}
@@ -173,11 +186,13 @@ function App() {
                 </p>
 
                 <h3 className="card-h3">$3799.99</h3>
-                <button id="pc-button" onClick={(e)=>cart.addToCart(e)}>Add to Cart</button>
+                <button id="pc-button" onClick={(e) => cart.addToCart(e)}>
+                  Add to Cart
+                </button>
               </div>
 
               <div className="card pc-card9">
-                <img src={Prebuilt9} width="50%" height="50%" alt="Pc9" />
+                <img src={Prebuilt9} width="100%" height="50%" alt="Pc9" />
                 <br />
                 <h3 className="card-h3">
                   <Link to="/ProductDetails" state={{ id: "Cape Spear" }}>
@@ -189,7 +204,9 @@ function App() {
                 </p>
 
                 <h3 className="card-h3">$5999.99</h3>
-                <button id="pc-button" onClick={(e)=>cart.addToCart(e)}>Add to Cart</button>
+                <button id="pc-button" onClick={(e) => cart.addToCart(e)}>
+                  Add to Cart
+                </button>
               </div>
 
               <div className="about-header">
