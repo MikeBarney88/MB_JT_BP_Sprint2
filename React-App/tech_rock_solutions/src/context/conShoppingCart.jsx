@@ -7,13 +7,7 @@ export const ShoppingCartContext = createContext(null);
 export async function findProduct(id) {
     const res = await fetch(`http://localhost:3000/products`);
     const allProducts = await res.json();
-
-    console.log(allProducts[0])
-    const foundProduct = allProducts[0].pc.filter((c)=>c.pcname === id);
-
-
-
-    console.log(foundProduct);
+    const foundProduct = allProducts[0].pc.filter((c)=>c.pcname === id)[0];
 
     return foundProduct;
 }
@@ -71,8 +65,8 @@ export function ShoppingCartProvider(props) {
 
 
     //Adds the specified item to the cart based on button press.
-    async function addToCart(e) {
-        const selectedName = e.target.previousSibling.previousSibling.previousSibling.innerText;
+    async function addToCart(e, iname=undefined) {
+        const selectedName = iname || e.target.previousSibling.previousSibling.previousSibling.innerText;
 
         const res = await fetch("http://localhost:3000/products")
         const data = await res.json();

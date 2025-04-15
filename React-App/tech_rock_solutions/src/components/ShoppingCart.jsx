@@ -4,7 +4,7 @@ import {
   removeFromCart,
   changeQuantityCart,
 } from "../context/conShoppingCart";
-
+import {Link} from "react-router-dom";
 function ShoppingCart() {
   const cart = useContext(ShoppingCartContext);
 
@@ -24,7 +24,10 @@ function ShoppingCart() {
           ) : (
             cart.cart.map((item, index) => (
               <li key={index}>
-                {item.pcname ? item.pcname : item.acname} &nbsp;
+                <Link to="/ProductDetails" state={{ id: `${item.pcname ? item.pcname : item.acname}` }}>
+                  {item.pcname ? item.pcname : item.acname} 
+                </Link>
+                &nbsp;
                 <label htmlFor={`quantity${item.id}`}>Quantity:</label>{" "}
                 <input
                   type="number"
