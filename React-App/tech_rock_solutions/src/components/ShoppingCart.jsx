@@ -24,7 +24,7 @@ function ShoppingCart() {
           ) : (
             cart.cart.map((item, index) => (
               <li key={index}>
-                {item.name} &nbsp;
+                {item.pcname ? item.pcname : item.acname} &nbsp;
                 <label htmlFor={`quantity${item.id}`}>Quantity:</label>{" "}
                 <input
                   type="number"

@@ -1,9 +1,22 @@
 import {useState, useEffect, createContext} from "react";
-import {useLocation} from "react-router-dom";
 
 
 export const ShoppingCartContext = createContext(null);
 
+//Gets product info for ProductDetails.
+export async function findProduct(id) {
+    const res = await fetch(`http://localhost:3000/products`);
+    const allProducts = await res.json();
+
+    console.log(allProducts[0])
+    const foundProduct = allProducts[0].pc.filter((c)=>c.pcname === id);
+
+
+
+    console.log(foundProduct);
+
+    return foundProduct;
+}
 
 //Removes items from cart through via an id filter.
 export async function removeFromCart(id, context) {
@@ -51,8 +64,10 @@ export function ShoppingCartProvider(props) {
             setLoading(false);
         }
 
-        getServerData();
-    }, [])
+        if (loading === true) {
+            getServerData();
+        }
+    }, [loading])
 
 
     //Adds the specified item to the cart based on button press.
@@ -65,9 +80,10 @@ export function ShoppingCartProvider(props) {
         let selectedProduct = (!data[0].pc.filter((c)=>c.pcname === selectedName).length > 0) ? data[0].accessories.filter((a)=>a.acname === selectedName)[0] : data[0].pc.filter((c)=> c.pcname === selectedName)[0];
 
         console.log(selectedProduct);
-        fetch("http://localhost:3000/cart", {method: "POST", header: {"Content-Type": "application/json"}, body: JSON.stringify(selectedProduct)})
+        fetch("http://localhost:3000/cart", {method: "POST", header: {"Content-Type": "application/json"}, body: JSON.stringify({...selectedProduct, quantity: "1"})})
         
         setCart(selectedProduct);
+        setLoading(true);
     }
 
 

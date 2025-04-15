@@ -1,6 +1,13 @@
+import {useLocation} from "react-router-dom";
+import {findProduct} from "../context/conShoppingCart";
 import Prebuilt1 from "../images/Prebuilt1.webp";
 
 const ProductDetails = () => {
+  //Links to this page can carry an ID inside the location's state property, we can use this to our advantage.
+  const {id} = useLocation().state;
+  const product = findProduct(id);
+  
+
   return (
     <main>
       <div className="pc-header">
