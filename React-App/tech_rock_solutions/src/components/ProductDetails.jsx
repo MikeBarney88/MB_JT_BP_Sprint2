@@ -1,19 +1,16 @@
-import {useState, useEffect, useContext} from "react";
-import {useLocation} from "react-router-dom";
-import {ShoppingCartContext, findProduct} from "../context/conShoppingCart";
+import { useState, useEffect, useContext } from "react";
+import { useLocation } from "react-router-dom";
+import { ShoppingCartContext, findProduct } from "../context/conShoppingCart";
 import Prebuilt1 from "../images/Prebuilt1.webp";
-
 
 const ProductDetails = () => {
   const cart = useContext(ShoppingCartContext);
   const [product, setProduct] = useState();
 
-
   //Links to this page can carry an ID inside the location's state property, we can use this to our advantage.
-  const {id} = useLocation().state;
+  const { id } = useLocation().state;
 
-
-  useEffect(()=>{
+  useEffect(() => {
     async function getProduct() {
       const item = await findProduct(id);
 
@@ -23,8 +20,15 @@ const ProductDetails = () => {
     getProduct();
   }, [id]);
 
-
-  return product === undefined ? (<main><div className="pc-header"><h1>Product Details</h1><br/><h2>Loading...</h2></div></main>) : (
+  return product === undefined ? (
+    <main>
+      <div className="pc-header">
+        <h1>Product Details</h1>
+        <br />
+        <h2>Loading...</h2>
+      </div>
+    </main>
+  ) : (
     <main>
       <div className="pc-header">
         <h1>Product Details</h1>
@@ -33,7 +37,7 @@ const ProductDetails = () => {
       <div className="card product-card">
         <img
           className="img-left"
-          src={Prebuilt1}
+          src={product.pcimg}
           width="250vw"
           height="250vh"
           alt="Pc"
@@ -81,7 +85,12 @@ const ProductDetails = () => {
 
         <h2>Cost: {product.price}</h2>
         <br />
-        <button id="spec-button" onClick={()=>cart.addToCart(undefined, product.pcname)}>Add to Cart</button>
+        <button
+          id="spec-button"
+          onClick={() => cart.addToCart(undefined, product.pcname)}
+        >
+          Add to Cart
+        </button>
       </div>
     </main>
   );

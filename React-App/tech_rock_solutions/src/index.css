@@ -284,8 +284,8 @@ li {
   text-align: center;
   justify-content: center;
   width: 50.72vw;
-  height: 80.56vh;
-  padding: 6.45vh 6.45vw;
+  height: auto;
+  padding: 4vh 4vw;
 }
 
 .img-left {
