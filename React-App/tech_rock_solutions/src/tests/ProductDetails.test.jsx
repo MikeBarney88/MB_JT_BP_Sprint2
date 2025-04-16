@@ -6,15 +6,11 @@ import "@testing-library/jest-dom/vitest";
 import { BrowserRouter } from "react-router-dom";
 
 describe("ProductDetails", () => {
-  render(
-    <BrowserRouter>
-      <ProductDetails State={{ id: "Dildo" }} />
-    </BrowserRouter>
-  );
+  render(<ProductDetails />);
 
   test("Text renders correctly", () => {
-    const nameElement = screen.getByText("Dildo", {
-      name: "Dildo",
+    const nameElement = screen.getByText("Operating System", {
+      name: "Operating System",
     });
     expect(nameElement).toBeInTheDocument();
   });
