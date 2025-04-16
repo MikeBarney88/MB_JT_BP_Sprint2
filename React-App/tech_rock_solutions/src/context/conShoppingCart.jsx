@@ -17,6 +17,8 @@ export async function removeFromCart(id, context) {
     await fetch(`http://localhost:3000/cart/${id}`, {method: "DELETE"});
 
     context.setCart(context.cart.filter((item)=>item.id !== id));
+
+    showStatus("Item removed from cart.");
 }
 
 
@@ -81,11 +83,30 @@ export function ShoppingCartProvider(props) {
 
 
     //Function for showing successful/failed interaction alerts.
-    // function showStatus(msg, tone) {
-    //     const div = document.createElement(div);
-    //     div.style.position = "absolute";
-    //     div.innerText = msg;
-    // }
+    function showStatus(msg, tone=true) {
+        const div = document.createElement("div");
+
+        div.style.cssText = 
+        `position: fixed;
+        width: 20%;
+        z-index: 1;
+        background-color: ${tone ? "lightgreen" : "red"};
+        border: 0.24vh solid black;
+        border-radius: 0.8vh;
+        padding: 0.3vh;
+        top: 10%;
+        left: 40%;
+        overscroll-behavior: hidden;
+        box-shadow: 1px 1px black;
+        text-align: center;
+        font-size: 2vw;
+        font-weight: 700;`;
+
+        div.innerText = msg;
+        document.body.appendChild(div);
+
+        setTimeout(()=>document.body.removeChild(div), 3000);
+    }
 
 
     //Adds the specified item to the cart based on button press.
@@ -102,19 +123,19 @@ export function ShoppingCartProvider(props) {
         let selectedProduct = productsCombined.filter((p)=>p.name === selectedName)[0];
 
         if (cart.filter((c)=>c.name === selectedProduct.name).length === 0) {
-            console.log(cart)
             fetch("http://localhost:3000/cart", {method: "POST", header: {"Content-Type": "application/json"}, body: JSON.stringify({...selectedProduct, quantity: "1"})})
+
+            showStatus("Item added to cart.");
         } else {
             const cartProduct = cart.filter((c)=>c.id === selectedProduct.id)[0];
 
             const valueDeterminer = parseInt(cartProduct.quantity) + 1
-            changeQuantityCart(cartProduct, valueDeterminer.toString(), ShoppingCartContext);
+            changeQuantityCart(cartProduct, valueDeterminer.toString(), ShoppingCartContext) ? showStatus("Item added to cart.") : null;
         }
         
         setCart(selectedProduct);
         setLoading(true);
     }
-
 
     return (
         <ShoppingCartContext.Provider value={{cart, setCart, loading, setLoading, addToCart}}>
