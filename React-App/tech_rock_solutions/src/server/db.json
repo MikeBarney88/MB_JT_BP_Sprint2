@@ -250,7 +250,61 @@
       },
       "price": "2399.99",
       "stock": "4",
-      "quantity": "1"
+      "quantity": "3"
+    },
+    {
+      "id": "p3",
+      "name": "Twillingate",
+      "pcimg": "src/images/Prebuilt3.webp",
+      "specs": {
+        "os": "Windows 11 Home",
+        "processor": "Intel Core i7-13700F",
+        "mobo": "Gigabyte B760 DS3H AC DDR4",
+        "graphics": "MSI NVIDIA GeForce RTX 4070 Super",
+        "memory": "Kingston Fury Beast 32GB RAM 3200MHz DDR4",
+        "storage": "1TB HDD + 2TB NVMe SSD",
+        "ports": "2 USB 3.0, 2 USB 2.0",
+        "network": "Ethernet and WiFi"
+      },
+      "price": "2599.99",
+      "stock": "6",
+      "quantity": "3"
+    },
+    {
+      "id": "p6",
+      "name": "Springdale",
+      "pcimg": "src/images/Prebuilt6.webp",
+      "specs": {
+        "os": "Windows 11 Pro",
+        "processor": "AMD Ryzen 7 7700",
+        "mobo": "MSI PRO B650M-A WiFi DDR5",
+        "graphics": "MSI NVIDIA GeForce RTX 4070",
+        "memory": "Kingston Fury Renegade 32GB DDR5 6400MHz",
+        "storage": "1TB NVMe SSD",
+        "ports": "2 USB 3.0, 2 USB 2.0",
+        "network": "Ethernet and WiFi"
+      },
+      "price": "3199.99",
+      "stock": "4",
+      "quantity": "3"
+    },
+    {
+      "id": "p5",
+      "name": "Burin",
+      "pcimg": "src/images/Prebuilt5.avif",
+      "specs": {
+        "os": "Windows 11 Home",
+        "processor": "AMD Ryzen 7 9800X3D",
+        "mobo": "MSI PRO X870-P WiFi",
+        "graphics": "NVIDIA GeForce RTX 4080 Super",
+        "memory": "Kingston Fury Renegade 64GB 6400MHz",
+        "storage": "1TB NVMe SSD + 2TB NVMe SSD",
+        "ports": "4 USB 3.0, 4 USB 2.0",
+        "network": "Ethernet and WiFi"
+      },
+      "price": "2999.99",
+      "stock": "3",
+      "quantity": "2"
     }
   ]
 }
