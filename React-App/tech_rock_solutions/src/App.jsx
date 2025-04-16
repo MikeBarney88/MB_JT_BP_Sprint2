@@ -128,9 +128,7 @@ function App() {
                     Burin
                   </Link>
                 </h3>
-                <p>
-                  Ryzen 7 9800X3D | RTX 4080 Super | 64GB RAM | 1TB + 2TB SSD
-                </p>
+                <p>Ryzen 7 9800X3D | RTX 4080 Super | 64GB RAM | 2TB SSD</p>
                 <h3 className="card-h3">$2999.99</h3>
                 <button id="pc-button" onClick={(e) => cart.addToCart(e)}>
                   Add to Cart
