@@ -27,12 +27,22 @@ export function changeQuantityCart(item, value, context) {
         
     } else {
         if ((item.quantity > item.stock) || (value > item.stock)) {
-            alert(`Sorry, we only have ${item.stock} of ${item.name} in stock at the moment. You can only order ${item.stock} or less at this time.`);
-            item.quantity = value - 1; 
-            document.querySelector(`#quantity${item.id}`).value = value - 1;
+            try {
+                alert(`Sorry, we only have ${item.stock} of ${item.name} in stock at the moment. You can only order ${item.stock} or less at this time.`);
+                item.quantity = value - 1; 
+                document.querySelector(`#quantity${item.id}`).value = value - 1;
+            } catch (error) {
+                null;
+            }
             return;
         }
         const restructuredItem = {...item, quantity: value};
+
+        try {
+            context.setLoading(true);
+        } catch (error) {
+            null;
+        }
 
         fetch(`http://localhost:3000/cart/${item.id}`, {
             method: "PUT",
@@ -68,6 +78,14 @@ export function ShoppingCartProvider(props) {
             getServerData();
         }
     }, [loading])
+
+
+    //Function for showing successful/failed interaction alerts.
+    // function showStatus(msg, tone) {
+    //     const div = document.createElement(div);
+    //     div.style.position = "absolute";
+    //     div.innerText = msg;
+    // }
 
 
     //Adds the specified item to the cart based on button press.

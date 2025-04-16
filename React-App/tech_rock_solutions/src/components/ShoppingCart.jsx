@@ -9,6 +9,7 @@ import CheckOut from "./CheckOut";
 
 function ShoppingCart() {
   const cart = useContext(ShoppingCartContext);
+  let priceAcc = 0;
 
   return (
     <main>
@@ -24,7 +25,10 @@ function ShoppingCart() {
           ) : cart.cart.length === 0 ? (
             <li>Your cart is empty.</li>
           ) : (
-            cart.cart.map((item, index) => (
+            cart.cart.map((item, index) => {
+              priceAcc += (item.price * item.quantity)
+
+              return(
               <li key={index}>
                 <Link
                   to="/ProductDetails"
@@ -61,12 +65,12 @@ function ShoppingCart() {
                 </button>
                 <li className="price">${item.price * item.quantity}</li>
               </li>
-            ))
+            )})
           )}
         </div>
       </div>
 
-      <CheckOut />
+      <CheckOut prices={priceAcc}/>
     </main>
   );
 }

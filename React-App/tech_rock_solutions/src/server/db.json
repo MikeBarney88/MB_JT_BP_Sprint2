@@ -232,7 +232,25 @@
       },
       "price": "1999.99",
       "stock": "5",
-      "quantity": "5"
+      "quantity": "3"
+    },
+    {
+      "id": "p2",
+      "name": "Quidi Vidi",
+      "pcimg": "src/images/Prebuilt2.webp",
+      "specs": {
+        "os": "Windows 11 Home",
+        "processor": "AMD Ryzen 7 7800X3D",
+        "mobo": "Gigabyte X670 AORUS Elite WiFi DDR5",
+        "graphics": "Gigabyte AMD Radeon RX 9070",
+        "memory": "Kingston Fury Beast 32GB RAM 5200MHz DDR5",
+        "storage": "1TB HDD + 2TB NVMe SSD",
+        "ports": "4 USB 3.0, 4 USB 2.0",
+        "network": "Ethernet and WiFi"
+      },
+      "price": "2399.99",
+      "stock": "4",
+      "quantity": "1"
     }
   ]
 }
