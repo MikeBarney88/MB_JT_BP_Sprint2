@@ -37,13 +37,22 @@ const CheckOut = ({ prices }) => {
       </div>
 
       <div className="totals">
-        <h3>Subtotal: ${subTotal}</h3>
+        <h3>Subtotal: ${subTotal.toFixed(2)}</h3>
         <h3>
           HST({HST * 100}%): ${salesTax.toFixed(2)}
         </h3>
-        <h2>Total: ${total}</h2>
+        <h2>Total: ${total.toFixed(2)}</h2>
 
-        <button className="checkout-button" onClick={()=>cart.cart.length === 0 ? cart.showStatus("Your cart is empty.", false) : cart.showStatus("Thank you for your purchase!")}>Purchase</button>
+        <button
+          className="checkout-button"
+          onClick={() =>
+            cart.cart.length === 0
+              ? cart.showStatus("Your cart is empty.", false)
+              : cart.showStatus("Thank you for your purchase!")
+          }
+        >
+          Purchase
+        </button>
       </div>
     </div>
   );
