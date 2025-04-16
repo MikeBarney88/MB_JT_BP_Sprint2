@@ -19,28 +19,3 @@ describe("ProductDetails", () => {
   });
   expect(pageHeading).toBeInTheDocument();
 });
-
-// describe("Shopping Cart", ()=>{
-//   function CartWithContext() {
-//       const {cart, setCart, loading, setLoading, addToCart} = useContext(ShoppingCartContext);
-//       return (<ShoppingCart/>);
-//   }
-
-//   render(
-//       <ShoppingCartProvider>
-//           <BrowserRouter>
-//               <CartWithContext/>
-//           </BrowserRouter>
-//       </ShoppingCartProvider>
-//   );
-
-//   test("Page renders correctly.", function() {
-//       const cartHeader = screen.getByRole("heading", {level: 1});
-//       expect(cartHeader).toBeInTheDocument();
-//   });
-
-//   test("Cart displays empty message properly.", async function() {
-//       const cartEmptyMsg = await screen.getByRole("listitem", {timeout: 2000}).textContent;
-//       expect(cartEmptyMsg.textContent === "Your cart is empty.").toBeInTheDocument();
-//   });
-// });
