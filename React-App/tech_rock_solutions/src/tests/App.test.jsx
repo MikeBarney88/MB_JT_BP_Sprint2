@@ -3,14 +3,13 @@ import ProductDetails from "../components/ProductDetails";
 import { test, expect, describe } from "vitest";
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom/vitest";
-import { BrowserRouter } from "react-router-dom";
 
-describe("ProductDetails", () => {
-  render(<ProductDetails />);
+describe("App", () => {
+  render(<App />);
 
   test("Text renders correctly", () => {
-    const nameElement = screen.getByText("Operating System", {
-      name: "Operating System",
+    const nameElement = screen.getByText("Dildo", {
+      name: "Dilod",
     });
     expect(nameElement).toBeInTheDocument();
   });
