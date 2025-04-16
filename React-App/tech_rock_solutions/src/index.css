@@ -319,6 +319,7 @@ li {
   color: rgb(12, 76, 216);
   padding: 0.78vh 0.78vw;
   margin-right: 0.39vw;
+  font-size: medium;
 }
 
 .specs-table {
