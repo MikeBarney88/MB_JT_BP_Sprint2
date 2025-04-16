@@ -14,7 +14,7 @@ describe('Accessories', () => {
     });
     test('renders the Accessories page', () => {
   
-      const headerElement = screen.getByRole('Header')
+      const headerElement = screen.getByText('Computer Accessories')
       expect(headerElement).toBeInTheDocument();
     });
 })
