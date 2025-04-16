@@ -1,7 +1,6 @@
 import { useState, useEffect, useContext } from "react";
 import { useLocation } from "react-router-dom";
 import { ShoppingCartContext, findProduct } from "../context/conShoppingCart";
-import Prebuilt1 from "../images/Prebuilt1.webp";
 
 const ProductDetails = () => {
   const cart = useContext(ShoppingCartContext);

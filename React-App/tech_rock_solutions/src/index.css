@@ -319,6 +319,7 @@ li {
   color: rgb(12, 76, 216);
   padding: 0.78vh 0.78vw;
   margin-right: 0.39vw;
+  font-size: medium;
 }
 
 .specs-table {
@@ -363,13 +364,24 @@ li {
   margin-top: 0.4vh;
 }
 
-.recipt-box {
+.receipt-box {
   background-color: #ffffff;
   border: 0.24vh solid rgb(0, 0, 0);
   border-radius: 0.8vh;
   box-shadow: 0.15vh 0.15vw hsl(0, 1%, 16%);
   margin-top: 2vh;
   margin-bottom: 2vh;
-  margin-right: 20vw;
+  margin-right: 25vw;
   padding: 1vh;
+}
+
+.receipt {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.totals {
+  float: right;
+  padding-right: 5vw;
 }

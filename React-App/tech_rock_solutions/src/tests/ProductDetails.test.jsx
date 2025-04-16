@@ -5,10 +5,11 @@ import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom/vitest";
 
 describe("ProductDetails", () => {
-  test("ProductDetails renders correctly", () => {
-    render(<ProductDetails />);
-    const nameElement = screen.getByRole("textbox", {
-      name: "Name",
+  render(<ProductDetails />);
+
+  test("Page renders correctly", () => {
+    const nameElement = screen.getByText("Dildo", {
+      name: "Dildo",
     });
     expect(nameElement).toBeInTheDocument();
   });

@@ -12,23 +12,25 @@ const CheckOut = ({ prices }) => {
   return (
     <div className="card checkoutInfo">
       <h2 className="cart-h2">Checkout:</h2>
-      <div className="recipt-box">
+      <div className="receipt-box">
         <p>Your Receipt:</p>
 
         {cart.loading ? (
           <li>Loading...</li>
         ) : cart.cart.length === 0 ? (
-          <li>Your cart is empty.</li>
+          <li>Your receipt is empty.</li>
         ) : (
           cart.cart.map((item, index) => {
             return (
-              <li key={index}>
-                {item.name} &nbsp;
-                <label htmlFor={`quantity${item.id}`}>
-                  Quantity: {item.quantity} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  Price: {(item.price * item.quantity).toFixed(2)}
-                </label>
-              </li>
+              <div>
+                <li key={index}>
+                  {item.name} &nbsp;
+                  <label className="receipt" htmlFor={`quantity${item.id}`}>
+                    Quantity: {item.quantity} &nbsp; Price:{" "}
+                    {(item.price * item.quantity).toFixed(2)}
+                  </label>
+                </li>
+              </div>
             );
           })
         )}
