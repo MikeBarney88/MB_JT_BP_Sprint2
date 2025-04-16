@@ -252,6 +252,7 @@ function App() {
               </div>
 
               <div className="our-socials">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <a href="http://Facebook.com">
                   <img
                     src={Facebook}
@@ -260,7 +261,7 @@ function App() {
                     alt="Font Awesome"
                   />
                 </a>
-
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <a href="http://Instagram.com">
                   <img
                     src={Instagram}
@@ -269,7 +270,7 @@ function App() {
                     alt="Font Awesome"
                   />
                 </a>
-
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <a href="http://Twitter.com">
                   <img
                     src={Twitter}
@@ -278,6 +279,7 @@ function App() {
                     alt="Font Awesome"
                   />
                 </a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <a href="http://Youtube.com">
                   <img
                     src={YouTube}
@@ -286,6 +288,7 @@ function App() {
                     alt="Font Awesome"
                   />
                 </a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               </div>
             </main>
           }
