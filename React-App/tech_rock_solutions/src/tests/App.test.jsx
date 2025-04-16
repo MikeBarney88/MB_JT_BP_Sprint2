@@ -1,5 +1,5 @@
 import React from "react";
-import ProductDetails from "../components/ProductDetails";
+import App from "../App";
 import { test, expect, describe } from "vitest";
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom/vitest";
