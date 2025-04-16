@@ -26,51 +26,51 @@ function ShoppingCart() {
             <li>Your cart is empty.</li>
           ) : (
             cart.cart.map((item, index) => {
-              priceAcc += (item.price * item.quantity)
+              priceAcc += item.price * item.quantity;
 
-              return(
-              <li key={index}>
-                <Link
-                  to="/ProductDetails"
-                  state={{ id: `${item.name}` }}
-                >
-                  {item.name}
-                </Link>
-                &nbsp;
-                <label htmlFor={`quantity${item.id}`}>Quantity:</label>{" "}
-                <input
-                  className="quantity"
-                  type="number"
-                  min="0"
-                  defaultValue={item.quantity}
-                  id={`quantity${item.id}`}
-                  onChange={() => {
-                    document.querySelector(`#quantity${item.id}`).blur();
+              return (
+                <li key={index}>
+                  <Link to="/ProductDetails" state={{ id: `${item.name}` }}>
+                    {item.name}
+                  </Link>
+                  &nbsp;
+                  <label htmlFor={`quantity${item.id}`}>Quantity:</label>{" "}
+                  <input
+                    className="quantity"
+                    type="number"
+                    min="0"
+                    defaultValue={item.quantity}
+                    id={`quantity${item.id}`}
+                    onChange={() => {
+                      document.querySelector(`#quantity${item.id}`).blur();
 
-                    changeQuantityCart(
-                      item,
-                      document.querySelector(`#quantity${item.id}`).value,
-                      cart
-                    );
-                  }}
-                />
-                &nbsp;
-                <button
-                  className="cart-button"
-                  onClick={() => {
-                    removeFromCart(item.id, cart);
-                  }}
-                >
-                  Remove
-                </button>
-                <li className="price">${item.price * item.quantity}</li>
-              </li>
-            )})
+                      changeQuantityCart(
+                        item,
+                        document.querySelector(`#quantity${item.id}`).value,
+                        cart
+                      );
+                    }}
+                  />
+                  &nbsp;
+                  <button
+                    className="cart-button"
+                    onClick={() => {
+                      removeFromCart(item.id, cart);
+                    }}
+                  >
+                    Remove
+                  </button>
+                  <p className="price">
+                    ${(item.price * item.quantity).toFixed(2)}
+                  </p>
+                </li>
+              );
+            })
           )}
         </div>
       </div>
 
-      <CheckOut prices={priceAcc}/>
+      <CheckOut prices={priceAcc} />
     </main>
   );
 }
