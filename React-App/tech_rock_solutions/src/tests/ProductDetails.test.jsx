@@ -3,9 +3,14 @@ import ProductDetails from "../components/ProductDetails";
 import { test, expect, describe } from "vitest";
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom/vitest";
+import { BrowserRouter } from "react-router-dom";
 
 describe("ProductDetails", () => {
-  render(<ProductDetails />);
+  render(
+    <BrowserRouter>
+      <ProductDetails />
+    </BrowserRouter>
+  );
 
   test("Text renders correctly", () => {
     const nameElement = screen.getByText("Dildo", {
