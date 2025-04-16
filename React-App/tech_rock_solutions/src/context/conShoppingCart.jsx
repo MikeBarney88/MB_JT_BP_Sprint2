@@ -27,7 +27,7 @@ export function changeQuantityCart(item, value, context) {
         
     } else {
         if ((item.quantity > item.stock) || (value > item.stock)) {
-            alert(`Sorry, we only have ${item.stock} of ${item.name} in stock at the moment. You can only order less than ${item.stock} at this time.`);
+            alert(`Sorry, we only have ${item.stock} of ${item.name} in stock at the moment. You can only order ${item.stock} or less at this time.`);
             item.quantity = value - 1; 
             document.querySelector(`#quantity${item.id}`).value = value - 1;
             return;
@@ -90,7 +90,7 @@ export function ShoppingCartProvider(props) {
             const cartProduct = cart.filter((c)=>c.id === selectedProduct.id)[0];
 
             const valueDeterminer = parseInt(cartProduct.quantity) + 1
-            changeQuantityCart(cartProduct, valueDeterminer.toString(), cart);
+            changeQuantityCart(cartProduct, valueDeterminer.toString(), ShoppingCartContext);
         }
         
         setCart(selectedProduct);
