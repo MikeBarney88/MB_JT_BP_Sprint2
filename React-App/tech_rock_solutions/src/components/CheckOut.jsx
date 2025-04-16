@@ -43,7 +43,7 @@ const CheckOut = ({ prices }) => {
         </h3>
         <h2>Total: ${total}</h2>
 
-        <button className="checkout-button">Purchase</button>
+        <button className="checkout-button" onClick={()=>cart.cart.length === 0 ? cart.showStatus("Your cart is empty.", false) : cart.showStatus("Thank you for your purchase!")}>Purchase</button>
       </div>
     </div>
   );

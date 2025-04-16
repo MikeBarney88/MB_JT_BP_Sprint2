@@ -94,12 +94,12 @@ export function ShoppingCartProvider(props) {
         border: 0.24vh solid black;
         border-radius: 0.8vh;
         padding: 0.3vh;
-        top: 10%;
+        top: 15%;
         left: 40%;
         overscroll-behavior: hidden;
         box-shadow: 1px 1px black;
         text-align: center;
-        font-size: 2vw;
+        font-size: 1.5vw;
         font-weight: 700;`;
 
         div.innerText = msg;
@@ -138,7 +138,7 @@ export function ShoppingCartProvider(props) {
     }
 
     return (
-        <ShoppingCartContext.Provider value={{cart, setCart, loading, setLoading, addToCart}}>
+        <ShoppingCartContext.Provider value={{cart, setCart, loading, setLoading, addToCart, showStatus}}>
             {props.children}
         </ShoppingCartContext.Provider>
     )
