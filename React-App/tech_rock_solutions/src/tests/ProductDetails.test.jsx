@@ -7,15 +7,17 @@ import "@testing-library/jest-dom/vitest";
 describe("ProductDetails", () => {
   render(<ProductDetails />);
 
-  test("Page renders correctly", () => {
+  test("Text renders correctly", () => {
     const nameElement = screen.getByText("Dildo", {
       name: "Dildo",
     });
     expect(nameElement).toBeInTheDocument();
   });
 
-  const pageHeading = screen.getByRole("heading", {
-    level: 1,
+  test("Page renders correctly", () => {
+    const pageHeading = screen.getByRole("heading", {
+      level: 1,
+    });
+    expect(pageHeading).toBeInTheDocument();
   });
-  expect(pageHeading).toBeInTheDocument();
 });
