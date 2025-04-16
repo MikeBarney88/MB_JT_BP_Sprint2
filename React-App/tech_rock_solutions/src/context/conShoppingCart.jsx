@@ -18,7 +18,7 @@ export async function removeFromCart(id, context) {
 
     context.setCart(context.cart.filter((item)=>item.id !== id));
 
-    showStatus("Item removed from cart.");
+    context.showStatus("Item removed from cart.");
 }
 
 
@@ -105,7 +105,7 @@ export function ShoppingCartProvider(props) {
         div.innerText = msg;
         document.body.appendChild(div);
 
-        setTimeout(()=>document.body.removeChild(div), 3000);
+        setTimeout(()=>document.body.removeChild(div), 1500);
     }
 
 
