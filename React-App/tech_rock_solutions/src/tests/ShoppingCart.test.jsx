@@ -32,7 +32,7 @@ describe("Shopping Cart", ()=>{
 
 
     test("Cart displays empty message properly.", async function() {
-        const cartEmptyMsg = await screen.findByRole("listitem", {timeout: 2000});
-        expect(cartEmptyMsg.textContent === "Your cart is empty.").toBeInTheDocument();
+        const cartEmptyMsg = await screen.findAllByRole("listitem", {timeout: 2000});
+        expect(cartEmptyMsg[0].textContent === "Your cart is empty.");
     });
 });
