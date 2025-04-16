@@ -8,7 +8,7 @@ import { BrowserRouter } from "react-router-dom";
 describe("ProductDetails", () => {
   render(
     <BrowserRouter>
-      <ProductDetails />
+      <ProductDetails State={{ id: "Dildo" }} />
     </BrowserRouter>
   );
 
