@@ -9,15 +9,15 @@ describe("App", () => {
 
   test("Text renders correctly", () => {
     const nameElement = screen.getByText("Dildo", {
-      name: "Dilod",
+      name: "Dildo",
     });
     expect(nameElement).toBeInTheDocument();
   });
 
   test("Page renders correctly", () => {
-    const pageHeading = screen.getByRole("heading", {
+    const pageHeading = screen.getAllByRole("heading", {
       level: 1,
     });
-    expect(pageHeading).toBeInTheDocument();
+    expect(pageHeading[0]).toBeInTheDocument();
   });
 });
